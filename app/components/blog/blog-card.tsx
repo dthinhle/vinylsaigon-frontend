@@ -1,4 +1,4 @@
-import { montserrat } from '@/app/fonts'
+import { stylized } from '@/app/fonts'
 import { cn, formatDate } from '@/lib/utils'
 import logoSvg from '@/public/assets/logo.svg'
 import Image from 'next/image'
@@ -39,7 +39,7 @@ const BlogCard: React.FC<BlogCardProps> = ({ post }) => {
           {/* Title */}
           <h2
             className={cn(
-              montserrat.className,
+              stylized.className,
               'text-lg mt-auto font-medium text-gray-950 group-hover:text-black transition-colors duration-200 leading-tight my-6 text-pretty h-16 ellipsis whitespace-normal',
             )}
           >

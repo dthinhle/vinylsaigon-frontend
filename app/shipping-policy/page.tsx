@@ -11,10 +11,10 @@ export const dynamic = 'force-static'
 export const metadata: Metadata = {
  title: 'Chính sách vận chuyển',
   description:
-    'Chính sách vận chuyển sản phẩm đến tay khách hàng của 3K Shop. Giao hàng nhanh chóng, an toàn, hỗ trợ kiểm tra hàng trước thanh toán cho các sản phẩm tai nghe, thiết bị âm thanh chính hãng.',
+    'Chính sách vận chuyển sản phẩm đến tay khách hàng của Vinyl Sài Gòn. Giao hàng nhanh chóng, an toàn, hỗ trợ kiểm tra hàng trước thanh toán cho các sản phẩm tai nghe, thiết bị âm thanh chính hãng.',
   openGraph: {
-    title: 'Chính sách vận chuyển | 3K Shop',
-    description: 'Chính sách vận chuyển sản phẩm đến tay khách hàng của 3K Shop',
+    title: 'Chính sách vận chuyển | Vinyl Sài Gòn',
+    description: 'Chính sách vận chuyển sản phẩm đến tay khách hàng của Vinyl Sài Gòn',
     type: 'website',
     url: `${process.env.NEXT_PUBLIC_APP_URL || 'https://vinylsaigon.vn'}/chinh-sach-van-chuyen`,
     images: [
@@ -22,14 +22,14 @@ export const metadata: Metadata = {
         url: ogImage.src,
         width: 2048,
         height: 1366,
-        alt: 'Chính sách vận chuyển 3K Shop',
+        alt: 'Chính sách vận chuyển Vinyl Sài Gòn',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Chính sách vận chuyển | 3K Shop',
-    description: 'Chính sách vận chuyển sản phẩm đến tay khách hàng của 3K Shop',
+    title: 'Chính sách vận chuyển | Vinyl Sài Gòn',
+    description: 'Chính sách vận chuyển sản phẩm đến tay khách hàng của Vinyl Sài Gòn',
     images: [ogImage.src],
   },
   alternates: {

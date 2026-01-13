@@ -76,7 +76,7 @@ export const FilterBar = ({ type }: FilterBarProps) => {
           items={sortOptions}
           className={cn(
             'w-full',
-            'bg-white border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-sea-buckthorn-500 focus:border-sea-buckthorn-500',
+            'bg-white border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-atomic-tangerine-500 focus:border-atomic-tangerine-500',
           )}
         />
       </div>

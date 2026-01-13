@@ -1,4 +1,4 @@
-import { base, montserrat } from '@/app/fonts'
+import { base, stylized } from '@/app/fonts'
 import { StoreInitializer } from '@/app/store/initializers'
 import Footer from '@/app/ui/layouts/footer'
 import Header from '@/app/ui/layouts/header'
@@ -50,9 +50,9 @@ const fetchSearchSuggestions = async () => {
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL || 'http://localhost:3000'),
-  title: { default: '3K Shop', template: '%s | 3K Shop' },
+  title: { default: 'Vinyl Sài Gòn', template: '%s | Vinyl Sài Gòn' },
   description:
-    '3K Shop chuyên tai nghe cao cấp, tai nghe true wireless, tai nghe chống ồn, mâm đĩa than, đĩa vinyl, máy nghe nhạc, loa di động.',
+    'Vinyl Sài Gòn chuyên tai nghe cao cấp, tai nghe true wireless, tai nghe chống ồn, mâm đĩa than, đĩa vinyl, máy nghe nhạc, loa di động.',
   icons: {
     icon: [{ url: '/favicon.ico' }, { url: '/icon.svg', type: 'image/svg+xml' }],
     apple: [{ url: '/apple-touch-icon.svg', sizes: '180x180' }],
@@ -69,9 +69,9 @@ export const metadata: Metadata = {
     canonical: process.env.NEXT_PUBLIC_APP_URL,
   },
   openGraph: {
-    title: { default: '3K Shop', template: '%s | 3K Shop' },
+    title: { default: 'Vinyl Sài Gòn', template: '%s | Vinyl Sài Gòn' },
     description:
-      '3K Shop chuyên tai nghe cao cấp, tai nghe true wireless, tai nghe chống ồn, mâm đĩa than, đĩa vinyl, máy nghe nhạc, loa di động.',
+      'Vinyl Sài Gòn chuyên tai nghe cao cấp, tai nghe true wireless, tai nghe chống ồn, mâm đĩa than, đĩa vinyl, máy nghe nhạc, loa di động.',
     url: process.env.NEXT_PUBLIC_APP_URL,
     type: 'website',
     images: [
@@ -79,7 +79,7 @@ export const metadata: Metadata = {
         url: ogImage.src,
         width: 2048,
         height: 1366,
-        alt: '3K Shop',
+        alt: 'Vinyl Sài Gòn',
       },
     ],
   },
@@ -87,9 +87,9 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     site: '@3kshop',
     creator: '@3kshop',
-    title: '3K Shop',
+    title: 'Vinyl Sài Gòn',
     description:
-      '3K Shop chuyên tai nghe cao cấp, tai nghe true wireless, tai nghe chống ồn, mâm đĩa than, đĩa vinyl, máy nghe nhạc, loa di động.',
+      'Vinyl Sài Gòn chuyên tai nghe cao cấp, tai nghe true wireless, tai nghe chống ồn, mâm đĩa than, đĩa vinyl, máy nghe nhạc, loa di động.',
     images: [ogImage.src],
   },
 }
@@ -133,7 +133,7 @@ export default async function RootLayout({
   const organizationSchema = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    name: '3K Shop',
+    name: 'Vinyl Sài Gòn',
     url: process.env.NEXT_PUBLIC_APP_URL,
     logo: `${process.env.NEXT_PUBLIC_APP_URL}/assets/logo.svg`,
     contactPoint: [
@@ -200,10 +200,10 @@ export default async function RootLayout({
           }}
         />
       </head>
-      <body className={cn(montserrat.variable, base.variable, 'antialiased')}>
+      <body className={cn(stylized.variable, base.variable, 'antialiased')}>
         <StoreInitializer />
         <NextTopLoader
-          color='var(--color-sea-buckthorn)'
+          color='var(--color-atomic-tangerine-400)'
           height={3}
           showSpinner={false}
           easing='ease-out'

@@ -19,7 +19,7 @@ const SECTIONS: PolicySection[] = [
           'Cung cấp cho bạn thông tin mới nhất trên website của chúng tôi;',
           'Xem xét và nâng cấp nội dung và giao diện của website;',
           'Thực hiện các bản khảo sát khách hàng;',
-          'Thực hiện các hoạt động quảng bá liên quan đến các sản phẩm và dịch vụ của 3K Shop.',
+          'Thực hiện các hoạt động quảng bá liên quan đến các sản phẩm và dịch vụ của Vinyl Sài Gòn.',
         ],
       },
       'Để truy cập và sử dụng một số dịch vụ tại vinylsaigon.vn, quý khách có thể sẽ được yêu cầu đăng ký với chúng tôi thông tin cá nhân (Email, Họ tên, Số ĐT liên lạc…). Mọi thông tin khai báo phải đảm bảo tính chính xác và hợp pháp. vinylsaigon.vn không chịu mọi trách nhiệm liên quan đến pháp luật của thông tin khai báo.',

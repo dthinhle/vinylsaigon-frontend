@@ -122,7 +122,7 @@ export const PromoCodeSection: React.FC = () => {
               disabled={loading || !input}
               variant='default'
               aria-label='Áp dụng mã khuyến mãi'
-              className='bg-black text-white hover:bg-black/70 border-none rounded-none shadow-none focus:ring-2 focus:ring-sea-buckthorn-400 min-h-[48px] min-w-[90px]'
+              className='bg-black text-white hover:bg-black/70 border-none rounded-none shadow-none focus:ring-2 focus:ring-atomic-tangerine-300 min-h-[48px] min-w-[90px]'
             >
               Áp dụng
             </Button>

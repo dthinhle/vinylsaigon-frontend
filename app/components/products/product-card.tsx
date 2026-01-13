@@ -127,7 +127,7 @@ export const ProductCard = React.memo(
       <Card
         className={cn(
           hoverBorderColor,
-          'overflow-hidden py-0 border border-transparent rounded-none shadow-none gap-0 cursor-pointer h-full',
+          'overflow-hidden py-0 border border-transparent rounded shadow-none gap-0 cursor-pointer h-full',
         )}
         onClick={handleCardClick}
       >
@@ -145,7 +145,7 @@ export const ProductCard = React.memo(
                       textColor,
                       backgroundColor,
                       borderColor,
-                      'border inline-block p-[3px] px-1.5 lg:text-sm/4 text-[8px]/3',
+                      'border inline-block p-1 px-1.5 lg:text-sm/4 text-[8px]/3',
                     )}
                   >
                     {collection}
@@ -204,7 +204,7 @@ export const ProductCard = React.memo(
           </Link>
 
           <div className='space-y-1 mb-8'>
-            <p className={cn('text-lg font-semibold mb-0', textColor)}>
+            <p className={cn('text-lg mb-0', textColor)}>
               {displayPrice ? formatPrice(displayPrice) : 'Liên hệ'}
             </p>
             {isOnSale ? (

@@ -55,9 +55,9 @@ export const BannerWithCategories: React.FC<BannerWithCategoriesProps> = ({
   const logoSize = categoriesToShow.length < 2 ? 60 : 40
 
   return (
-    <div id='category-banner' className={'w-full lg:mt-19'}>
+    <div id='category-banner' className={'w-full lg:mt-21'}>
       {/* Header section with breadcrumb and title */}
-      <div className={cn('px-6 mb-2 lg:px-10 max-w-screen-2xl mx-auto lg:pt-6 pt-20')}>
+      <div className={cn('px-6 mb-2 lg:px-10 max-w-screen-2xl mx-auto lg:pt-6 pt-24')}>
         <BreadcrumbNav
           classNames={{
             root: 'text-base space-y-2',

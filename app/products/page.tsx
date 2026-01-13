@@ -15,7 +15,7 @@ import { sortCategoriesByTitle } from '@/lib/utils/sort-categories'
 
 const metaTitle = 'Tất cả sản phẩm'
 const metaDescription =
-  'Khám phá toàn bộ bộ sưu tập tai nghe cao cấp, tai nghe true wireless, tai nghe chống ồn, mâm đĩa than, đĩa vinyl, máy nghe nhạc, loa di động tại 3K Shop. Chất lượng cao, giá cả hợp lý.'
+  'Khám phá toàn bộ bộ sưu tập tai nghe cao cấp, tai nghe true wireless, tai nghe chống ồn, mâm đĩa than, đĩa vinyl, máy nghe nhạc, loa di động tại Vinyl Sài Gòn. Chất lượng cao, giá cả hợp lý.'
 
 // Function to generate metadata with pagination support
 async function generateMetadataWithPagination(): Promise<Metadata> {
@@ -42,7 +42,7 @@ async function generateMetadataWithPagination(): Promise<Metadata> {
           url: allProducts.src,
           width: 3000,
           height: 1994,
-          alt: 'Tất cả sản phẩm | 3K Shop',
+          alt: 'Tất cả sản phẩm | Vinyl Sài Gòn',
         },
       ],
     },
@@ -72,9 +72,9 @@ const PageBanner = ({
   breadcrumbNodes: Array<{ label: string; link: string }>
 }) => {
   return (
-    <div id='category-banner' className={'w-full lg:mt-19'}>
+    <div id='category-banner' className={'w-full lg:mt-21'}>
       {/* Header section with breadcrumb and title */}
-      <div className={cn('px-6 mb-2 lg:px-10 max-w-screen-2xl mx-auto lg:pt-6 pt-20')}>
+      <div className={cn('px-6 mb-2 lg:px-10 max-w-screen-2xl mx-auto lg:pt-6 pt-24')}>
         <BreadcrumbNav
           classNames={{
             root: 'text-base space-y-2',

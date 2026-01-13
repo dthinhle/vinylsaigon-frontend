@@ -30,7 +30,7 @@ export default function GlobalError({
         <div className='min-h-screen flex items-center justify-center bg-gray-50 px-4'>
           <div className='max-w-md w-full space-y-8 text-center'>
             <div>
-              <div className='text-9xl font-bold text-red-400 mb-4'>!</div>
+              <div className='text-9xl font-bold text-amber-500 mb-4'>!</div>
               <h1 className='text-3xl font-bold text-gray-900 mb-4'>Oops!</h1>
               <p className='text-lg text-gray-600 mb-8'>
                 Đã xảy ra lỗi không mong muốn. <br/>Vui lòng tải lại trang hoặc liên hệ hỗ trợ.
@@ -57,7 +57,7 @@ export default function GlobalError({
               <p className='text-sm text-gray-600'>
                 <strong>Mã lỗi:</strong> {error.digest || 'CRITICAL_ERROR'}
               </p>
-              <p className='text-xs text-gray-500 mt-1'>Liên hệ: support@3kshop.com</p>
+              <p className='text-xs text-gray-500 mt-1'>Liên hệ: support@vinylsaigon.vn</p>
             </div>
           </div>
         </div>

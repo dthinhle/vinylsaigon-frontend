@@ -5,10 +5,10 @@ import OrderConfirmation from './order-confirmation'
 
 export const metadata: Metadata = {
   title: 'Xác nhận thanh toán đơn hàng',
-  description: 'Xác nhận thanh toán đơn hàng tại 3K Shop.',
+  description: 'Xác nhận thanh toán đơn hàng tại Vinyl Sài Gòn.',
   openGraph: {
-    title: 'Xác nhận thanh toán đơn hàng | 3K Shop',
-    description: 'Xác nhận thanh toán đơn hàng tại 3K Shop.',
+    title: 'Xác nhận thanh toán đơn hàng | Vinyl Sài Gòn',
+    description: 'Xác nhận thanh toán đơn hàng tại Vinyl Sài Gòn.',
     type: 'website',
   },
 }

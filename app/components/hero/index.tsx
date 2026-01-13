@@ -1,4 +1,4 @@
-import { montserrat } from '@/app/fonts'
+import { stylized } from '@/app/fonts'
 import { cn } from '@/lib/utils'
 
 import { HeroProps } from './types'
@@ -14,7 +14,7 @@ export const Hero = ({ title, description = [], className }: HeroProps) => {
       <div className='relative z-20 w-full px-8 mt-20'>
         <h1
           className={cn(
-            montserrat.className,
+            stylized.className,
             'text-4xl md:text-4xl mb-6 tracking-wide text-left px-8',
           )}
         >

@@ -1,6 +1,6 @@
 'use client'
 
-import { montserrat } from '@/app/fonts'
+import { stylized } from '@/app/fonts'
 import { IHeroBanner } from '@/lib/types/hero-banner'
 import { cn, contrastingColor } from '@/lib/utils'
 import Image from 'next/image'
@@ -37,7 +37,7 @@ const HeroBanner: React.FC<Props> = ({ banners }) => {
   }
 
   return (
-    <div className='relative mt-18.5 [&_.swiper-pagination-bullet]:bg-white!'>
+    <div className='relative mt-20 [&_.swiper-pagination-bullet]:bg-white!'>
       <Swiper
         loop
         speed={500}
@@ -63,7 +63,7 @@ const HeroBanner: React.FC<Props> = ({ banners }) => {
                     fill
                     priority={index === 0}
                     sizes='100vw'
-                    alt={banner.mainTitle || banner.description || 'Banner khuyến mãi 3K Shop'}
+                    alt={banner.mainTitle || banner.description || 'Banner khuyến mãi Vinyl Sài Gòn'}
                     src={banner.image?.url || ''}
                     className='w-full h-auto object-cover cursor-pointer'
                     onClick={handleImageClick(banner)}
@@ -78,7 +78,7 @@ const HeroBanner: React.FC<Props> = ({ banners }) => {
                   >
                     <h4
                       className={cn(
-                        montserrat.className,
+                        stylized.className,
                         isActive ? 'opacity-100 swiper-slide-active-text' : 'opacity-0',
                         'text-(--text-color) md:text-xl lg:text-3xl uppercase font-bold text-right box-shadow',
                       )}

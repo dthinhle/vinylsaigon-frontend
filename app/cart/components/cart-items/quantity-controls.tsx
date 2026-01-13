@@ -71,7 +71,7 @@ const QuantityControls: React.FC<QuantityControlsProps> = ({
       <Button
         type='button'
         size='icon'
-        className='shadow-none size-7 flex items-center justify-center text-lg font-bold bg-white hover:bg-gray-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-sea-buckthorn-400 cursor-pointer'
+        className='shadow-none size-7 flex items-center justify-center text-lg font-bold bg-white hover:bg-gray-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-atomic-tangerine-300 cursor-pointer'
         onClick={handleDecrease}
         aria-label='Decrease quantity'
         disabled={localValue <= min}
@@ -84,7 +84,7 @@ const QuantityControls: React.FC<QuantityControlsProps> = ({
       <Button
         type='button'
         size='icon'
-        className='shadow-none size-7 flex items-center justify-center text-lg font-bold bg-white hover:bg-gray-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-sea-buckthorn-400 cursor-pointer'
+        className='shadow-none size-7 flex items-center justify-center text-lg font-bold bg-white hover:bg-gray-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-atomic-tangerine-300 cursor-pointer'
         onClick={handleIncrease}
         aria-label='Increase quantity'
         disabled={localValue >= max}

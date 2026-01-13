@@ -32,7 +32,7 @@ export const CheckoutButton: React.FC = () => {
     <div className='mt- flex flex-col items-center w-full'>
       <Button
         type='button'
-        className='h-[48px] hover:bg-black/70 w-full px-6 py-3 bg-black text-white font-semibold text-base transition-transform duration-150 active:scale-95 flex items-center justify-between focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-2 cursor-pointer rounded-none'
+        className='h-12 w-full px-6 py-3 bg-amber-300 hover:bg-amber-500/70 active:bg-amber-600 font-semibold text-base transition-transform duration-150 active:scale-95 flex items-center justify-between focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-2 cursor-pointer rounded'
         variant='default'
         onClick={handleCheckout}
         disabled={loading || !cartItems.length}
@@ -42,7 +42,7 @@ export const CheckoutButton: React.FC = () => {
         {loading ? (
           <>
             <ReloadIcon
-              className='animate-spin motion-reduce:animate-none size-5 mr-2 text-white'
+              className='animate-spin motion-reduce:animate-none size-5 mr-2 text-zinc-950'
               aria-hidden='true'
             />
             Đang xử lý...
@@ -51,7 +51,7 @@ export const CheckoutButton: React.FC = () => {
           <>
             <span className='mx-auto'>Tiếp tục thanh toán</span>
             <span className='flex items-center'>
-              <LockClosedIcon className='size-5 text-white' aria-hidden='true' />
+              <LockClosedIcon className='size-5 text-zinc-950' aria-hidden='true' />
             </span>
           </>
         )}

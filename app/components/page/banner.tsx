@@ -1,4 +1,4 @@
-import { montserrat } from '@/app/fonts'
+import { stylized } from '@/app/fonts'
 import { cn } from '@/lib/utils'
 import * as React from 'react'
 
@@ -14,7 +14,7 @@ export const Banner: React.FC<BannerProps> = ({ backgroundImage, breadcrumbNodes
   return (
     <div
       id='page-banner'
-      className={'w-full lg:mt-19 lg:h-96 h-72 relative'}
+      className={'w-full lg:mt-21 lg:h-96 h-72 relative'}
     >
       <Image
         src={backgroundImage}
@@ -33,7 +33,7 @@ export const Banner: React.FC<BannerProps> = ({ backgroundImage, breadcrumbNodes
 
         <h1
           className={cn(
-            montserrat.className,
+            stylized.className,
             'scroll-m-20 text-gray-50 lg:text-4xl text-2xl font-extrabold tracking-tight lg:mt-4 mt-3 drop-shadow',
           )}
         >

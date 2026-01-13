@@ -1,4 +1,4 @@
-# Copilot Instructions - 3K Shop Frontend
+# Copilot Instructions - Vinyl Sài Gòn Frontend
 
 - Never generate summary or explanation text.
 - Never use emoji in your responses.
@@ -10,7 +10,7 @@
 
 ## Project Overview
 
-This is a Next.js 15 e-commerce frontend for 3K Shop (audio equipment retailer) with Vietnamese localization, using App Router, TypeScript, Tailwind CSS, and Zustand for state management.
+This is a Next.js 15 e-commerce frontend for Vinyl Sài Gòn (audio equipment retailer) with Vietnamese localization, using App Router, TypeScript, Tailwind CSS, and Zustand for state management.
 
 ## Architecture Patterns
 

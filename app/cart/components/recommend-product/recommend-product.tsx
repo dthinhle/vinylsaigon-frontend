@@ -24,7 +24,7 @@ export const RelatedProductRow = ({ products, dark }: RelatedProductRowType) => 
         </CarouselItem>
       ))}
     </CarouselContent>
-    <CarouselPrevious className='disabled:hidden sm:flex lg:top-3/8 top-2/7 lg:size-10 lg:left-8 left-1 bg-sea-buckthorn-300 border-sea-buckthorn-500/30 text-gray-800 hover:bg-sea-buckthorn-400' />
-    <CarouselNext className='disabled:hidden sm:flex lg:top-3/8 top-2/7 lg:size-10 lg:right-8 right-1 bg-sea-buckthorn-300 border-sea-buckthorn-500/30 text-gray-800 hover:bg-sea-buckthorn-400' />
+    <CarouselPrevious className='disabled:hidden sm:flex lg:top-3/8 top-2/7 lg:size-10 lg:left-8 left-1 bg-atomic-tangerine-300 border-atomic-tangerine-500/30 text-gray-800 hover:bg-atomic-tangerine-300' />
+    <CarouselNext className='disabled:hidden sm:flex lg:top-3/8 top-2/7 lg:size-10 lg:right-8 right-1 bg-atomic-tangerine-300 border-atomic-tangerine-500/30 text-gray-800 hover:bg-atomic-tangerine-300' />
   </Carousel>
 )

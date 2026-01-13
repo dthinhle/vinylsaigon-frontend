@@ -23,7 +23,7 @@ const PaymentMethods: React.FC = () => {
           </h3>
           <h3 className='text-lg mb-2'>
             <strong>
-              Chủ tài khoản: <span className='text-sea-buckthorn-400'>VO NGOC BAO NGAN</span>
+              Chủ tài khoản: <span className='text-atomic-tangerine-300'>VO NGOC BAO NGAN</span>
             </strong>
           </h3>
           <ul className='list-decimal ml-6'>

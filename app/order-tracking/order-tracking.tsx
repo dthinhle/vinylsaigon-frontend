@@ -75,22 +75,9 @@ export const OrderTracking: React.FC = () => {
 
               <div className='space-y-3'>
                 <p className='font-semibold text-gray-900'>Giờ làm việc Chăm sóc khách hàng</p>
-                <div className='text-sm text-gray-700'>
-                  <strong>Cửa hàng 1:</strong>
-                  <br />
-                  <Link
-                    href={'https://maps.app.goo.gl/p8g4VwmG9WadD3Vh9'}
-                    target='_blank'
-                    className='relative inline-block text-black after:absolute after:bottom-0 after:left-0 after:h-[1px]
-                      after:w-0 after:bg-gray-900 after:transition-width after:duration-300 hover:after:w-full'
-                  >
-                    14 Nguyễn Văn Giai, P. Đa Kao, Q.1
-                  </Link>
-                  <p>(028) 38 202 909 – <PhoneNumber number='0914 345 357' /></p>
-                </div>
 
                 <div className='text-sm text-gray-700'>
-                  <strong>Cửa hàng 2:</strong>
+                  <strong>Cửa hàng:</strong>
                   <br />
                   <Link
                     href={'https://maps.app.goo.gl/LNCo5krNtub6rD326'}

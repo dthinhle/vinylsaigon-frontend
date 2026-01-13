@@ -39,7 +39,7 @@ export const Input: React.FC<InputProps> = ({
     />
     {loading && (
       <span
-        className='absolute right-3 top-1/2 -translate-y-1/2 animate-spin h-4 w-4 border-2 border-sea-buckthorn-400 border-t-transparent rounded-full'
+        className='absolute right-3 top-1/2 -translate-y-1/2 animate-spin h-4 w-4 border-2 border-atomic-tangerine-300 border-t-transparent rounded-full'
         aria-label='Loading'
       />
     )}

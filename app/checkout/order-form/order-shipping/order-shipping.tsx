@@ -305,7 +305,7 @@ const OrderShipping: React.FC<Props> = ({
                   className={`w-full px-3 py-3 border rounded-md text-sm transition-colors focus:outline-none focus:ring-0 ${
                     errors.phone
                       ? 'border-red-500 bg-red-50'
-                      : 'border-gray-300 hover:border-gray-400'
+                      : 'border-gray-300 hover:border-atomic-tangerine-200'
                   }`}
                 />
                 {errors.phone && <p className='mt-1 text-sm text-red-600'>{errors.phone}</p>}

@@ -10,10 +10,10 @@ export const dynamic = 'force-static'
 
 export const metadata: Metadata = {
   title: 'Hướng dẫn mua trả góp',
-  description: 'Hướng dẫn mua trả góp tại 3K Shop',
+  description: 'Hướng dẫn mua trả góp tại Vinyl Sài Gòn',
   openGraph: {
-    title: 'Hướng dẫn mua trả góp | 3K Shop',
-    description: 'Hướng dẫn mua trả góp tại 3K Shop',
+    title: 'Hướng dẫn mua trả góp | Vinyl Sài Gòn',
+    description: 'Hướng dẫn mua trả góp tại Vinyl Sài Gòn',
     type: 'website',
     url: `${process.env.NEXT_PUBLIC_APP_URL || 'https://vinylsaigon.vn'}/huong-dan-mua-tra-gop`,
     images: [
@@ -21,14 +21,14 @@ export const metadata: Metadata = {
         url: ogImage.src,
         width: 2048,
         height: 1366,
-        alt: 'Hướng dẫn mua trả góp 3K Shop',
+        alt: 'Hướng dẫn mua trả góp Vinyl Sài Gòn',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Hướng dẫn mua trả góp | 3K Shop',
-    description: 'Hướng dẫn mua trả góp tại 3K Shop',
+    title: 'Hướng dẫn mua trả góp | Vinyl Sài Gòn',
+    description: 'Hướng dẫn mua trả góp tại Vinyl Sài Gòn',
     images: [ogImage.src],
   },
  alternates: {
@@ -55,10 +55,10 @@ const Page: React.FC = () => {
     mainEntity: [
       {
         '@type': 'Question',
-        name: 'Có những hình thức mua trả góp nào tại 3K Shop?',
+        name: 'Có những hình thức mua trả góp nào tại Vinyl Sài Gòn?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: '3K Shop cung cấp 3 hình thức mua trả góp: 1) Trả góp qua thẻ tín dụng bằng dịch vụ mPos, 2) Trả góp qua công ty tài chính HD Saigon, 3) Trả góp qua thẻ tín dụng tại website 3K Shop.',
+          text: 'Vinyl Sài Gòn cung cấp 3 hình thức mua trả góp: 1) Trả góp qua thẻ tín dụng bằng dịch vụ mPos, 2) Trả góp qua công ty tài chính HD Saigon, 3) Trả góp qua thẻ tín dụng tại website Vinyl Sài Gòn.',
         },
       },
       {
@@ -82,7 +82,7 @@ const Page: React.FC = () => {
         name: 'Thời gian trả góp là bao lâu?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Khi mua trả góp qua thẻ tín dụng tại website 3K Shop, bạn có thể lựa chọn 1 trong 4 thời hạn trả góp khác nhau: 3, 6, 9 hoặc 12 tháng.',
+          text: 'Khi mua trả góp qua thẻ tín dụng tại website Vinyl Sài Gòn, bạn có thể lựa chọn 1 trong 4 thời hạn trả góp khác nhau: 3, 6, 9 hoặc 12 tháng.',
         },
       },
       {

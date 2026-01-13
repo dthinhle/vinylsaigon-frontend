@@ -79,10 +79,6 @@ const OrderNote: React.FC<Props> = ({ className }) => {
         <div>
           <h4 className='font-semibold mb-2'>Cần hỗ trợ với đơn hàng?</h4>
           <ul className='list-disc ml-4'>
-            <li className='mb-2'>
-              <span>14 Nguyễn Văn Giai, P. Đa Kao, Q.1</span>
-              <p>(028) 38 202 909 – <PhoneNumber number='0914 345 357' /></p>
-            </li>
             <li>
               <span>6B Đinh Bộ Lĩnh, P.24, Q. Bình Thạnh</span>
               <p>(028) 38 202 909 – <PhoneNumber number='0914 345 357' /></p>

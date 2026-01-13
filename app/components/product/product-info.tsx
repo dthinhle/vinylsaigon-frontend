@@ -1,4 +1,4 @@
-import { montserrat } from '@/app/fonts'
+import { stylized } from '@/app/fonts'
 import { FRONTEND_PATH } from '@/lib/constants'
 import { LexicalContent } from '@/lib/types/lexical-node'
 import { IProduct, PRODUCT_STOCK_STATUSES, TProductStockStatus } from '@/lib/types/product'
@@ -41,7 +41,7 @@ const ProductInfo: React.FC<Props> = ({ product, selectedVariant, setSelectedVar
     <div className='lg:px-2 px-3 xl:pr-0 xl:pl-6 flex flex-col lg:gap-4.5 gap-6 sticky top-0 h-fit'>
       <ProductBadges product={product} />
 
-      <h1 className={cn(montserrat.className, 'first:max-lg:mt-3 text-2xl md:text-3xl font-semibold')}>{name}</h1>
+      <h1 className={cn(stylized.className, 'first:max-lg:mt-3 text-2xl md:text-3xl font-semibold')}>{name}</h1>
 
       <div className='flex items-baseline pl-2 border-l border-gray-950 gap-2'>
         <span className='text-sm'>Thương hiệu:</span>

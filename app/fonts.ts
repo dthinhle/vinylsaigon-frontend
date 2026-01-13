@@ -1,18 +1,18 @@
-import { Manrope, Montserrat } from 'next/font/google'
+import { Barlow, Judson } from 'next/font/google'
 
-const montserrat = Montserrat({
-  weight: ['300', '400', '500', '700'],
+const stylized = Judson({
+  weight: ['400', '700'],
   subsets: ['latin', 'vietnamese'],
   display: 'swap',
   fallback: ['system-ui', 'sans-serif'],
-  variable: '--font-montserrat',
+  variable: '--font-stylized',
 })
 
-const base = Manrope({
+const base = Barlow({
   weight: ['500', '600', '700'],
   subsets: ['vietnamese'],
   display: 'swap',
   variable: '--font-base',
 })
 
-export { base, montserrat }
+export { base, stylized }

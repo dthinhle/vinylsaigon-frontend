@@ -1,6 +1,6 @@
 'use client'
 
-import { montserrat } from '@/app/fonts'
+import { stylized } from '@/app/fonts'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Separator } from '@/components/ui/separator'
@@ -91,7 +91,7 @@ const ProductResultHit = ({ hit }: { hit: ProductHit }) => {
           <Image src={productImage} alt={product.name} width={64} height={64} className='aspect-square object-cover' unoptimized />
         </div>
         <div className='w-full'>
-          <div className='font-medium [&_.ais-Highlight-highlighted]:bg-sea-buckthorn-400 [&_.ais-Highlight-highlighted]:rounded-xs [&_.ais-Highlight-highlighted]:px-px'>
+          <div className='font-medium [&_.ais-Highlight-highlighted]:bg-atomic-tangerine-300 [&_.ais-Highlight-highlighted]:rounded-xs [&_.ais-Highlight-highlighted]:px-px'>
             <Highlight attribute='name' hit={hit} />
           </div>
           <div className='text-sm text-gray-500'>
@@ -111,7 +111,7 @@ const ArticleResultHit = ({ hit }: { hit: ArticleHit }) => {
           <Image src={hit.featuredImageUrl ? hit.featuredImageUrl : LogoBlack.src} alt={hit.title} width={64} height={64} className='aspect-square object-cover' unoptimized />
         </div>
         <div className='w-full'>
-          <div className='font-medium [&_.ais-Highlight-highlighted]:bg-sea-buckthorn-400 [&_.ais-Highlight-highlighted]:rounded-xs [&_.ais-Highlight-highlighted]:px-px'>
+          <div className='font-medium [&_.ais-Highlight-highlighted]:bg-atomic-tangerine-300 [&_.ais-Highlight-highlighted]:rounded-xs [&_.ais-Highlight-highlighted]:px-px'>
             <Highlight attribute='title' classNames={{ root: 'line-clamp-1' }} hit={hit} />
           </div>
         </div>
@@ -171,7 +171,7 @@ const SearchSuggestionSection = ({
   items: { label: string; path: string }[]
 }) => (
   <div className='mb-6'>
-    <h3 className={cn(montserrat.className, 'font-bold text-gray-900 mb-4')}>{title}</h3>
+    <h3 className={cn(stylized.className, 'font-bold text-gray-900 mb-4')}>{title}</h3>
     <div className='flex flex-wrap gap-2'>
       {items.map((item) => (
         <a
@@ -222,7 +222,7 @@ const SearchResults = ({ searchSuggestions }: IDefaultSearchPanel) => {
     return (
       <>
         {query.length > 0 && (
-          <p className='text-sm/5 text-sea-buckthorn-400 ml-2 mb-2'>
+          <p className='text-sm/5 text-atomic-tangerine-300 ml-2 mb-2'>
             Vui lòng nhập từ khoá ít nhất 2 ký tự.
           </p>
         )}
@@ -246,7 +246,7 @@ const SearchResults = ({ searchSuggestions }: IDefaultSearchPanel) => {
         data-status={status}
         className='data-[status=loading]:hidden data-[status=stalled]:hidden'
       >
-        <h3 className={cn(montserrat.className, 'font-bold text-gray-900 mb-4')}>Sản phẩm</h3>
+        <h3 className={cn(stylized.className, 'font-bold text-gray-900 mb-4')}>Sản phẩm</h3>
         <Index indexName='products_search'>
           <CustomHits<ProductHit> hitComponent={ProductResultHit} indexName='sản phẩm' />
         </Index>
@@ -255,7 +255,7 @@ const SearchResults = ({ searchSuggestions }: IDefaultSearchPanel) => {
         data-status={status}
         className='data-[status=loading]:hidden data-[status=stalled]:hidden'
       >
-        <h3 className={cn(montserrat.className, 'font-bold text-gray-900 mb-4')}>Bài viết</h3>
+        <h3 className={cn(stylized.className, 'font-bold text-gray-900 mb-4')}>Bài viết</h3>
         <Index indexName='articles'>
           <CustomHits<ArticleHit> hitComponent={ArticleResultHit} indexName='bài viết' />
         </Index>
@@ -322,13 +322,13 @@ const DebouncedSearchBox = ({
             debouncedRefine.current(value)
           }}
           placeholder='Tìm kiếm…'
-          className='w-full p-2 border border-gray-300 focus-visible:ring-[1px] focus-visible:ring-gray-300'
+          className='w-full py-2 border border-gray-300 focus-visible:ring-[1px] focus-visible:ring-gray-300 rounded-full'
         />
         <Button
           type='button'
           variant='ghost'
           size='icon'
-          className='absolute right-1 top-1/2 -translate-y-1/2 h-7 w-7 text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-100'
+          className='rounded-full absolute right-1 top-1/2 -translate-y-1/2 h-7 w-7 text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-100'
           onClick={handleClear}
           disabled={!inputValue.length}
         >
@@ -339,7 +339,7 @@ const DebouncedSearchBox = ({
       <Button
         variant='outline'
         type='submit'
-        className='ml-4 focus-visible:ring-[1.5px] focus-visible:ring-gray-300'
+        className='ml-4 focus-visible:ring-[1.5px] focus-visible:ring-gray-300 rounded-full bg-amber-300 hover:bg-amber-400 border-0 shadow px-6 py-2'
       >
         Tìm kiếm
       </Button>
@@ -365,7 +365,7 @@ const SearchPanel = ({ isOpen, searchSuggestions, closeSearch }: ISearchPanelPro
       </InstantSearch>
       <Separator />
       <div className='p-6 '>
-        <Image src={Logo} alt='Logo 3K Shop - Trang tìm kiếm' width={48} height={48} unoptimized />
+        <Image src={Logo} alt='Logo Vinyl Sài Gòn - Trang tìm kiếm' width={48} height={48} unoptimized />
       </div>
     </div>
   )

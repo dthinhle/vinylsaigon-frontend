@@ -62,7 +62,7 @@ const CartItemList = ({ item, handleQuantityChange, handleRemoveItem, cart }: Ca
             item.variant.name !== DEFAULT_VARIANT_NAME &&
             Object.keys(item.variant).length > 0 && (
               <div className='variant-wrap'>
-                <span className='text-xs bg-sea-buckthorn-400 text-white flex-0 py-1 rounded-sm px-2 whitespace-nowrap'>
+                <span className='text-xs bg-atomic-tangerine-300 text-white flex-0 py-1 rounded-sm px-2 whitespace-nowrap'>
                   {item.variant.name}
                 </span>
               </div>

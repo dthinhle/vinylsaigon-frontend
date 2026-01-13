@@ -86,7 +86,7 @@ export const generateMetadata = async ({ params }: SlugPageProps): Promise<Metad
         title: pageTitle,
         description: pageDescription,
         url: `${baseUrl}/${slug}`,
-        siteName: '3K Shop',
+        siteName: 'Vinyl Sài Gòn',
         type: 'website', // Standard Open Graph type; product-specific rich snippets come from JSON-LD structured data below
         images: [
           {
@@ -200,7 +200,7 @@ export default async function Page({ params }: SlugPageProps) {
           }))
         : {
             '@type': 'Brand',
-            name: typedProduct.brands[0]?.name || '3K Shop',
+            name: typedProduct.brands[0]?.name || 'Vinyl Sài Gòn',
           },
       ...(hasOffers
         ? {
@@ -222,7 +222,7 @@ export default async function Page({ params }: SlugPageProps) {
                 url: `${baseUrl}/${slug}${v.name !== DEFAULT_VARIANT_NAME && validVariants.length > 1 ? `?variant=${v.slug}` : ''}`,
                 seller: {
                   '@type': 'Organization',
-                  name: '3K Shop',
+                  name: 'Vinyl Sài Gòn',
                   url: baseUrl,
                 },
               })),
@@ -264,8 +264,8 @@ export default async function Page({ params }: SlugPageProps) {
             __html: JSON.stringify(breadcrumbSchema),
           }}
         />
-        <div className='w-full lg:mt-19'>
-          <div className='px-6 mb-2 lg:px-10 max-w-screen-2xl mx-auto lg:pt-6 pt-20'>
+        <div className='w-full lg:mt-21'>
+          <div className='px-6 mb-2 lg:px-10 max-w-screen-2xl mx-auto lg:pt-6 pt-24'>
             <BreadcrumbNav
               classNames={{
                 root: 'text-base space-y-2',

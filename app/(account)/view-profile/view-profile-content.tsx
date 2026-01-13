@@ -2,7 +2,7 @@
 
 import { AccountSidebar } from '@/app/components/account'
 import { BreadcrumbNav } from '@/app/components/page/breadcrumb-nav'
-import { montserrat } from '@/app/fonts'
+import { stylized } from '@/app/fonts'
 import { useAuthStore } from '@/app/store/auth-store'
 import { FRONTEND_PATH } from '@/lib/constants'
 import { cn } from '@/lib/utils'
@@ -42,7 +42,7 @@ export function ViewProfileContent() {
             />
             <h1
               className={cn(
-                montserrat.className,
+                stylized.className,
                 'scroll-m-20 text-black lg:text-2xl text-xl font-medium tracking-tight lg:mt-4 mt-3',
               )}
             >
@@ -60,7 +60,7 @@ export function ViewProfileContent() {
             <div className='flex-1 lg:border-l lg:border-gray-300 lg:pl-12 space-y-6'>
               <div>
                 <div
-                  className={cn(montserrat.className, 'mb-1 font-semibold text-base lg:text-xl')}
+                  className={cn(stylized.className, 'mb-1 font-semibold text-base lg:text-xl')}
                 >
                   {name}
                 </div>

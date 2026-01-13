@@ -1,4 +1,4 @@
-import { montserrat } from '@/app/fonts'
+import { stylized } from '@/app/fonts'
 import {
   Carousel,
   CarouselContent,
@@ -39,8 +39,8 @@ const SubcategoryCard: React.FC<{ className?: string; subcategory: ICategory }> 
         <div className='absolute bottom-0 left-0 right-0 px-4 py-3'>
           <h3
             className={cn(
-              montserrat.className,
-              'text-white font-semibold text-lg group-hover:text-gray-200 transition-colors',
+              stylized.className,
+              'text-white lg:text-xl text-lg font-bold group-hover:text-gray-200 transition-colors',
             )}
           >
             {subcategory.title}

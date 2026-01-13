@@ -1,4 +1,4 @@
-import { montserrat } from '@/app/fonts'
+import { stylized } from '@/app/fonts'
 import { FRONTEND_PATH } from '@/lib/constants'
 import { ICategory } from '@/lib/types/category'
 import { cn } from '@/lib/utils'
@@ -57,7 +57,7 @@ const CategoryBox: React.FC<Props> = ({
       <div className={classes.content}>
         <h3
           className={cn(
-            montserrat.className,
+            stylized.className,
             classes.title,
           )}
         >

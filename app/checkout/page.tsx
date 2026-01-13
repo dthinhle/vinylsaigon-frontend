@@ -5,10 +5,10 @@ import CheckoutPage from './checkout-page'
 
 export const metadata: Metadata = {
   title: 'Đặt hàng và Thanh toán',
-  description: 'Tiến hành đặt hàng và thanh toán đơn hàng của bạn tại 3K Shop.',
+  description: 'Tiến hành đặt hàng và thanh toán đơn hàng của bạn tại Vinyl Sài Gòn.',
   openGraph: {
-    title: 'Đặt hàng và Thanh toán | 3K Shop',
-    description: 'Tiến hành đặt hàng và thanh toán đơn hàng của bạn tại 3K Shop.',
+    title: 'Đặt hàng và Thanh toán | Vinyl Sài Gòn',
+    description: 'Tiến hành đặt hàng và thanh toán đơn hàng của bạn tại Vinyl Sài Gòn.',
     type: 'website',
   },
 }

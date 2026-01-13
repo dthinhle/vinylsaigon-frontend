@@ -6,7 +6,7 @@ import {
   BreadcrumbSeparator,
 } from '@/components/ui/breadcrumb'
 import { cn } from '@/lib/utils'
-import { SlashIcon } from 'lucide-react'
+import { CopySlash, Slash, SlashIcon, SlashSquare } from 'lucide-react'
 import * as React from 'react'
 
 export interface BreadcrumbNode {
@@ -44,7 +44,7 @@ export const BreadcrumbNav = ({ nodes, classNames, renderLastSeparator }: Breadc
             </BreadcrumbItem>
             {(renderLastSeparator ? idx <= length - 1 : idx < length - 1) && (
               <BreadcrumbSeparator>
-                <SlashIcon className='text-gray-300 invert-30' />
+                <Slash strokeWidth={2} className='text-gray-300 invert-30' />
               </BreadcrumbSeparator>
             )}
           </React.Fragment>

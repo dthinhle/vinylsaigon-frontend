@@ -106,14 +106,14 @@ const AddToCartButton: React.FC<CartButtonProps> = ({ product, selectedVariant, 
         <TooltipWrapper stockStatus={stockStatus}>
           <Button
             size='xl'
-            className='bg-black text-white hover:bg-gray-800 font-semibold cursor-pointer text-base hover:text-lg transition-all grow'
+            className='bg-amber-300 text-black hover:bg-amber-500 font-semibold cursor-pointer text-base hover:text-lg transition-all grow rounded'
             onClick={() => handleAddToCart()}
             disabled={isLoading || stockStatus in ERROR_MESSAGES}
           >
             {
               isLoading ?
               <>
-                <div className='animate-spin rounded-full h-4 w-4 border-2 border-gray-300 border-t-gray-500'></div>
+                <div className='animate-spin rounded-full h-4 w-4 border-2 border-amber-300 border-t-amber-500'></div>
                 Đang thêm vào giỏ hàng...
               </> :
               STATUS_MESSAGES[stockStatus]

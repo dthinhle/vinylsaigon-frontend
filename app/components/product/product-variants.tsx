@@ -59,7 +59,7 @@ const ProductVariants: React.FC<Props> = ({
               <p className='text-sm md:text-base text-gray-500 line-through'>
                 {formattedOriginalPrice}
               </p>
-              <span className='bg-sea-buckthorn-100 text-sea-buckthorn-800 text-sm font-medium px-1.5 py-0.5 rounded'>
+              <span className='bg-atomic-tangerine-100 text-atomic-tangerine-800 text-sm font-medium px-1.5 py-0.5 rounded'>
                 -{discountPercentage}%
               </span>
             </>
@@ -75,11 +75,11 @@ const ProductVariants: React.FC<Props> = ({
                 <div
                   key={index}
                   className={cn(
-                    'p-2 border cursor-pointer transition-all text-sm relative overflow-clip',
+                    'p-2 border cursor-pointer transition-all text-sm relative overflow-clip rounded',
                     selectedVariant.sku === variant.sku
-                      ? 'bg-gray-950 border-transparent text-gray-50 shadow-sm shadow-gray-400'
-                      : 'border-gray-400',
-                    variant.status !== 'active' ? 'bg-[linear-gradient(to_left_top,transparent_48.5%,var(--cross-out-color)_49.75%,var(--cross-out-color)_50.25%,transparent_51.5%)]' : '',
+                      ? 'bg-atomic-tangerine-300 border-transparent text-white shadow-sm'
+                      : 'border-atomic-tangerine-700 text-atomic-tangerine-700',
+                    variant.status !== 'active' ? 'bg-[linear-gradient(to_left_top,transparent_48.5%,var(--cross-out-color)_49.75%,var(--cross-out-color)_50.25%,transparent_51.5%)] bg-no-repeat' : '',
                   )}
                   style={{ '--cross-out-color': 'var(--color-gray-400)' } as React.CSSProperties}
                   onClick={() => {

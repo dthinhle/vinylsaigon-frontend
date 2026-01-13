@@ -12,7 +12,7 @@ type HeaderProps = {
 const Header = ({ menuData, searchSuggestions }: HeaderProps) => {
   return (
     <>
-      <TopHeader />
+      {/* <TopHeader /> */}
       <MenuBar menuData={menuData} searchSuggestions={searchSuggestions} />
     </>
   )

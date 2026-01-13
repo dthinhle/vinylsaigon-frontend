@@ -73,8 +73,8 @@ const BankTransferInfo: React.FC = () => {
           <span className='font-medium text-black-900'>TP. Hồ Chí Minh</span>
         </div>
       </div>
-      <div className='mt-3 p-3 bg-sea-buckthorn-50 border border-sea-buckthorn-200 rounded'>
-        <p className='text-sm text-sea-buckthorn-800'>
+      <div className='mt-3 p-3 bg-atomic-tangerine-50 border border-atomic-tangerine-200 rounded'>
+        <p className='text-sm text-atomic-tangerine-800'>
           <strong>Lưu ý:</strong> Vui lòng ghi rõ mã đơn hàng trong nội dung chuyển khoản. Đơn hàng
           sẽ được xử lý sau khi chúng tôi nhận được thanh toán.
         </p>

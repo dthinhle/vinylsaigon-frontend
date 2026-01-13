@@ -11,12 +11,12 @@ export async function generateMetadata({ params }: SlugPageCategoryBrandProps): 
   const brand = await getBrandData(slug)
   if (!brand) {
     return {
-      title: 'Thương hiệu không tìm thấy - 3K Shop',
+      title: 'Thương hiệu không tìm thấy - Vinyl Sài Gòn',
     }
   }
 
   const metaTitle = brand.name
-  const metaDescription = `Khám phá bộ sưu tập sản phẩm ${brand.name} chính hãng tại 3K Shop. Tai nghe, máy nghe nhạc, loa di động ${brand.name} với đầy đủ các dòng sản phẩm mới nhất. Bảo hành chính hãng, tư vấn miễn phí.`
+  const metaDescription = `Khám phá bộ sưu tập sản phẩm ${brand.name} chính hãng tại Vinyl Sài Gòn. Tai nghe, máy nghe nhạc, loa di động ${brand.name} với đầy đủ các dòng sản phẩm mới nhất. Bảo hành chính hãng, tư vấn miễn phí.`
   const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://vinylsaigon.vn'
 
   return {
@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: SlugPageCategoryBrandProps): 
       canonical: `${baseUrl}/thuong-hieu/${brand.slug}`, // Add canonical URL
     },
     openGraph: {
-      title: `${metaTitle} | 3K Shop`,
+      title: `${metaTitle} | Vinyl Sài Gòn`,
       description: metaDescription,
       url: `${baseUrl}/thuong-hieu/${brand.slug}`,
       images: [
@@ -38,7 +38,7 @@ export async function generateMetadata({ params }: SlugPageCategoryBrandProps): 
     },
     twitter: {
       card: 'summary_large_image',
-      title: `${metaTitle} | 3K Shop`,
+      title: `${metaTitle} | Vinyl Sài Gòn`,
       description: metaDescription,
       images: [brand.logoUrl || logoBlack.src],
     },

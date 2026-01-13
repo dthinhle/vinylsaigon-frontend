@@ -11,13 +11,13 @@ export async function generateMetadata({ params }: SlugPageCategoryBrandProps): 
   const collection = await getCollectionData(slug)
   if (!collection) {
     return {
-      title: 'Bộ sưu tập không tìm thấy - 3K Shop',
+      title: 'Bộ sưu tập không tìm thấy - Vinyl Sài Gòn',
     }
   }
 
   const metaTitle = collection.name
   const metaDescription =
-    collection.description || `Các sản phẩm của ${collection.name} tại 3K Shop`
+    collection.description || `Các sản phẩm của ${collection.name} tại Vinyl Sài Gòn`
   const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://vinylsaigon.vn'
 
   return {
@@ -27,7 +27,7 @@ export async function generateMetadata({ params }: SlugPageCategoryBrandProps): 
       canonical: `${baseUrl}/bo-suu-tap/${collection.slug}`, // Add canonical URL
     },
     openGraph: {
-      title: `${metaTitle} | 3K Shop`,
+      title: `${metaTitle} | Vinyl Sài Gòn`,
       description: metaDescription,
       url: `${baseUrl}/bo-suu-tap/${collection.slug}`,
       images: [
@@ -39,7 +39,7 @@ export async function generateMetadata({ params }: SlugPageCategoryBrandProps): 
     },
     twitter: {
       card: 'summary_large_image',
-      title: `${metaTitle} | 3K Shop`,
+      title: `${metaTitle} | Vinyl Sài Gòn`,
       description: metaDescription,
       images: [collection.bannerUrl || logoBlack.src],
     },

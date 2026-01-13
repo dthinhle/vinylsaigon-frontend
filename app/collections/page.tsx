@@ -10,14 +10,14 @@ import { ListCollection } from '../components/collections/list-collection'
 export const metadata: Metadata = {
   title: 'Bộ sưu tập',
   description:
-    'Khám phá các bộ sưu tập tai nghe cao cấp, tai nghe true wireless, tai nghe chống ồn, mâm đĩa than, đĩa vinyl, máy nghe nhạc, loa di động tại 3K Shop. Chất lượng cao, giá cả hợp lý.',
+    'Khám phá các bộ sưu tập tai nghe cao cấp, tai nghe true wireless, tai nghe chống ồn, mâm đĩa than, đĩa vinyl, máy nghe nhạc, loa di động tại Vinyl Sài Gòn. Chất lượng cao, giá cả hợp lý.',
   alternates: {
     canonical: `${process.env.NEXT_PUBLIC_APP_URL}/collections`,
   },
   openGraph: {
     title: 'Bộ sưu tập',
     description:
-      'Khám phá các bộ sưu tập tai nghe cao cấp, tai nghe true wireless, tai nghe chống ồn, mâm đĩa than, đĩa vinyl, máy nghe nhạc, loa di động tại 3K Shop. Chất lượng cao, giá cả hợp lý.',
+      'Khám phá các bộ sưu tập tai nghe cao cấp, tai nghe true wireless, tai nghe chống ồn, mâm đĩa than, đĩa vinyl, máy nghe nhạc, loa di động tại Vinyl Sài Gòn. Chất lượng cao, giá cả hợp lý.',
     url: `${process.env.NEXT_PUBLIC_APP_URL}${FRONTEND_PATH.collections}`,
     type: 'website',
     images: [
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
         url: collections.src,
         width: 3000,
         height: 1994,
-        alt: 'Bộ sưu tập | 3K Shop',
+        alt: 'Bộ sưu tập | Vinyl Sài Gòn',
       },
     ],
   },
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Bộ sưu tập',
     description:
-      'Khám phá các bộ sưu tập tai nghe cao cấp, tai nghe true wireless, tai nghe chống ồn, mâm đĩa than, đĩa vinyl, máy nghe nhạc, loa di động tại 3K Shop. Chất lượng cao, giá cả hợp lý.',
+      'Khám phá các bộ sưu tập tai nghe cao cấp, tai nghe true wireless, tai nghe chống ồn, mâm đĩa than, đĩa vinyl, máy nghe nhạc, loa di động tại Vinyl Sài Gòn. Chất lượng cao, giá cả hợp lý.',
     images: [collections.src],
   },
 }

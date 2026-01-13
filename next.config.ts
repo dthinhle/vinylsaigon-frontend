@@ -38,6 +38,16 @@ const nextConfig: NextConfig = {
         protocol: 'https',
         hostname: 'assets.vinylsaigon.vn',
       },
+      // 3kshop assets
+      {
+        protocol: 'https',
+        hostname: 'assets.3kshop.vn',
+      },
+      {
+        protocol: 'https',
+        hostname: 'app.3kshop.vn',
+        pathname: '/rails/active_storage/**',
+      },
     ],
     dangerouslyAllowSVG: true,
   },

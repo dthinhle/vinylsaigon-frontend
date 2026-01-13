@@ -1,21 +1,19 @@
 'use client'
 
 import { CartButton } from '@/app/components/cart/cart-button'
-import { montserrat } from '@/app/fonts'
+import { stylized } from '@/app/fonts'
 import { useThrottledScroll } from '@/app/hooks/use-throttled-scroll'
 import { useAuthStore } from '@/app/store/auth-store'
 import { useCartStore } from '@/app/store/cart-store'
 import { FRONTEND_PATH } from '@/lib/constants'
 import { IUser } from '@/lib/types/user'
 import { cn } from '@/lib/utils'
-import logoBlack from '@/public/assets/logo-black.svg'
+import logo from '@/public/assets/logo.svg'
 import {
   ChevronLeftIcon,
   ChevronRightIcon,
-  Cross2Icon,
-  HamburgerMenuIcon,
 } from '@radix-ui/react-icons'
-import { Search, User2Icon } from 'lucide-react'
+import { X, Menu, Search, User2Icon } from 'lucide-react'
 import { AnimatePresence, Variants, motion } from 'motion/react'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -64,14 +62,12 @@ const TWO_LAST = ['KHUYẾN MÃI', 'LIÊN HỆ']
 
 const menuBarVariants: Variants = {
   idle: {
-    paddingTop: '1rem',
     width: 'calc(min(var(--breakpoint-2xl), 100vw))',
     transition: {
       borderRadius: { delay: 0.1 },
     },
   },
   open: {
-    paddingTop: 0,
     width: 'min(var(--breakpoint-2xl), 100vw)',
   },
 }
@@ -115,20 +111,22 @@ const HeaderIcons = ({
   isSearchOpen: openSearch,
   isUserOpen: openUser,
 }: NavLinksProps) => (
-  <div className={'flex items-center gap-4'}>
-    <Search
-      strokeWidth={1.25}
-      className='cursor-pointer hover:text-gray-700'
-      onClick={() => setOpenSearch!(!openSearch)}
-    />
-    <User2Icon
-      strokeWidth={1.25}
-      className='cursor-pointer hover:text-gray-700'
-      onClick={() => setOpenUser!(!openUser)}
-    />
-    <CartButton />
-    <div className='size-5 block lg:hidden text-black [&_svg]:size-5' onClick={onMenuClick}>
-      {open ? <Cross2Icon /> : <HamburgerMenuIcon />}
+  <div className={'flex items-center gap-4 max-lg:w-full max-lg:justify-between'}>
+    <div className='size-5 block lg:hidden text-white [&_svg]:size-5' onClick={onMenuClick}>
+      {open ? <X strokeWidth={2} /> : <Menu strokeWidth={2} />}
+    </div>
+    <div className="icons-wrapper flex flex-row gap-3">
+      <Search
+        strokeWidth={2}
+        className='cursor-pointer hover:text-gray-400'
+        onClick={() => setOpenSearch!(!openSearch)}
+      />
+      <User2Icon
+        strokeWidth={2}
+        className='cursor-pointer hover:text-gray-400'
+        onClick={() => setOpenUser!(!openUser)}
+      />
+      <CartButton />
     </div>
   </div>
 )
@@ -155,7 +153,7 @@ const NavLinks: React.FC<NavLinksProps> = ({ onMenuClick }) => (
           href={item.path}
           onClick={ComponentTypeAndProp.onClick}
           className={cn(
-            'cursor-pointer text-black text-base lg:text-lg hover:font-bold hover:tracking-tight px-1',
+            'cursor-pointer text-white text-base lg:text-lg hover:text-zinc-400 px-1',
             'before:block before:tracking-normal before:content-[attr(data-text)] before:font-bold before:h-0 before:overflow-hidden before:invisible',
             TWO_LAST.includes(item.label) ? 'hidden lg:block' : '',
           )}
@@ -180,7 +178,7 @@ const FeaturedProduct = ({
     <div className={className}>
       <div className='relative aspect-square w-full overflow-hidden rounded-lg'>
         <Image
-          src={imageSrc ?? logoBlack.src}
+          src={imageSrc ?? logo.src}
           alt={label}
           className='object-cover'
           fill
@@ -188,7 +186,7 @@ const FeaturedProduct = ({
           unoptimized
         />
         <div className='absolute bottom-0 left-0 right-0 p-4 bg-linear-to-t from-black/80 to-transparent space-y-2 h-48 flex flex-col justify-end'>
-          <h4 className={cn(montserrat.className, 'text-lg font-bold text-white')}>{label}</h4>
+          <h4 className={cn(stylized.className, 'text-lg font-bold text-white')}>{label}</h4>
           <div className="link-wrapper">
             <Link href={link} className='inline-block text-white py-2 font-bold text-sm border-b border-white'>
               Mua ngay
@@ -213,7 +211,7 @@ const LeftSection = ({
         <div className='mb-4' key={`item-${index}`}>
           <h3
             key={`h3-${index}`}
-            className={`font-bold text-gray-900 mt-4 first:mt-0 mb-2 ${montserrat.className}`}
+            className='font-bold text-gray-900 mt-4 first:mt-0 mb-2'
           >
             {item.label}
           </h3>
@@ -272,7 +270,7 @@ const MainSection = ({
                 <div key={`${columnIndex}-${index}`}>
                   <a
                     href={item.link}
-                    className={`font-bold text-gray-900 mb-2 block ${montserrat.className}`}
+                    className='font-bold text-gray-900 mb-2 block'
                   >
                     {item.label}
                   </a>
@@ -417,8 +415,8 @@ const MobileMenu = ({
           <motion.li
             key={`mobile-${index}`}
             className={cn(
-              montserrat.className,
-              'text-gray-950 cursor-pointer font-medium text-2xl hover:font-bold hover:tracking-tight m-5',
+              stylized.className,
+              'text-gray-950 cursor-pointer font-medium text-2xl hover:text-zinc-400 m-5',
               'before:block before:tracking-normal before:content-[attr(data-text)] before:font-bold before:h-0 before:overflow-hidden before:invisible',
             )}
             variants={{
@@ -447,12 +445,12 @@ const MobileMenu = ({
             className='size-12 left-1/2 -translate-x-1/2 bottom-10 absolute bg-gray-900 rounded-full'
             onClick={() => setOpen(false)}
           >
-            <Cross2Icon className='h-full w-full text-white p-2' />
+            <X className='h-full w-full text-white p-2' />
           </button>
         </div>
       </motion.ul>
       <SubMenuPanel isOpen={isProductsOpen} closePanel={() => setIsProductsOpen(false)}>
-        <h3 className={`text-2xl m-5 font-medium text-gray-900 ${montserrat.className}`}>
+        <h3 className={`text-2xl m-5 font-medium text-gray-900 ${stylized.className}`}>
           Sản Phẩm
         </h3>
         <ul className='h-[calc(100%-7.5rem)] overflow-y-scroll [&>li:last-child]:mb-12 space-y-5'>
@@ -479,7 +477,7 @@ const MobileMenu = ({
         isOpen={subProductMenuItem != null}
         closePanel={() => setSubProductMenuItem(null)}
       >
-        <h3 className={`text-2xl m-5 font-medium text-gray-900 ${montserrat.className}`}>
+        <h3 className={`text-2xl m-5 font-medium text-gray-900 ${stylized.className}`}>
           {subProductMenuItem?.link ? (
             <Link href={subProductMenuItem?.link}>{subProductMenuItem?.label}</Link>
           ) : (
@@ -509,7 +507,7 @@ const NotSignedInMenu = () => (
     )}
   >
     <div className=''>
-      <h3 className={cn(montserrat.className, 'font-bold text-gray-900 text-lg p-4 pb-0')}>
+      <h3 className={cn(stylized.className, 'font-bold text-gray-900 text-lg p-4 pb-0')}>
         Trang cá nhân
       </h3>
       <hr className='my-4 text-gray-400' />
@@ -545,7 +543,7 @@ const SignedInMenu = ({ user, loading, signOut }: SignedInMenuProps) => {
       )}
     >
       <div className=''>
-        <h3 className={cn(montserrat.className, 'font-bold text-gray-900 text-lg p-4 pb-0')}>
+        <h3 className={cn(stylized.className, 'font-bold text-gray-900 text-lg p-4 pb-0')}>
           Xin chào, {user.name ? user.name.toLocaleUpperCase() : 'Người dùng'}!
         </h3>
         <hr className='my-4 text-gray-400' />
@@ -659,7 +657,7 @@ const MenuBar = ({ menuData, searchSuggestions }: IMenuBarProps) => {
 
   const scrollUpStyling = React.useMemo(() => {
     return isAnyOpen || scrollDir != 'down' || (scrollPosition?.top ?? 0) < 100
-      ? 'data-not-root-path:lg:max-h-20'
+      ? 'data-not-root-path:lg:max-h-24'
       : 'data-not-root-path:lg:max-h-0'
   }, [scrollDir, isAnyOpen, scrollPosition?.top])
 
@@ -700,7 +698,7 @@ const MenuBar = ({ menuData, searchSuggestions }: IMenuBarProps) => {
   return (
     <header id='main-menu' className='h-0 z-50 sticky -top-px'>
       <div
-        className={cn('absolute top-0 w-full', isAnyOpen ? 'min-h-[calc(100dvh-4rem)]' : '')}
+        className={cn('w-full', isAnyOpen ? 'min-h-[calc(100dvh-4rem)]' : '')}
         ref={menuBarWrapper}
         onClick={(e) => e.target === menuBarWrapper.current && handleClose()}
       >
@@ -721,18 +719,18 @@ const MenuBar = ({ menuData, searchSuggestions }: IMenuBarProps) => {
               variants={menuBarVariants}
               transition={{ duration: 0.15, ease: 'easeIn' }}
             >
-              <motion.div variants={{ idle: { width: '1rem'}, open: { width: 0 }}} transition={{ duration: 0.15, ease: 'easeOut' }} className='lg:hidden'></motion.div>
               <div
                 data-sticky={menuSticky ? 'true' : 'false'}
                 data-menu-open={isAnyOpen ? 'true' : 'false'}
                 className={
-                cn(
-                  'flex w-full items-center justify-between p-4 bg-white',
-                  'data-[sticky=true]:lg:shadow-none data-[sticky=true]:shadow-md data-[menu-open=false]:rounded-lg',
-                )
-              }>
-                <Link href='/'>
-                  <Image alt='Logo 3K Shop' src={logoBlack} className='w-25 h-auto' unoptimized />
+                  cn(
+                    'flex w-full items-center justify-between px-4 bg-zinc-900 relative lg:h-22 h-20 text-white',
+                    'data-[sticky=true]:lg:shadow-none data-[sticky=true]:shadow-md',
+                  )
+                }
+              >
+                <Link href='/' className='absolute left-1/2 -translate-x-1/2'>
+                  <Image alt='Logo Vinyl Sài Gòn' src={logo} className='lg:h-16 h-12' unoptimized />
                 </Link>
                 <NavLinks onMenuClick={toggleMenu} />
                 <HeaderIcons
@@ -744,7 +742,6 @@ const MenuBar = ({ menuData, searchSuggestions }: IMenuBarProps) => {
                   isUserOpen={menuState.user}
                 />
               </div>
-              <motion.div variants={{ idle: { width: '1rem'}, open: { width: 0 }}} transition={{ duration: 0.15, ease: 'easeOut' }} className='lg:hidden'></motion.div>
             </motion.nav>
           </motion.div>
         </AnimatePresence>

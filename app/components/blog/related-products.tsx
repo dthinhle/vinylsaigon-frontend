@@ -1,6 +1,6 @@
 'use client'
 
-import { montserrat } from '@/app/fonts'
+import { stylized } from '@/app/fonts'
 import {
   Carousel,
   CarouselContent,
@@ -33,7 +33,7 @@ export const RelatedProducts = ({ products, showTitle = true }: RelatedProductsP
 
   return (
     <section className={cn('lg:mb-12 mb-6', showTitle ? '' : 'lg:mb-4')}>
-      {showTitle && <h2 className={cn(montserrat.className, 'text-2xl font-semibold text-gray-900 mb-6')}>
+      {showTitle && <h2 className={cn(stylized.className, 'text-2xl font-semibold text-gray-900 mb-6')}>
         Sản phẩm liên quan
       </h2>}
 

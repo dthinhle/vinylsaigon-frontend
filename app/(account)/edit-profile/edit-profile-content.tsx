@@ -2,7 +2,7 @@
 
 import { updateUser } from '@/app/api/user'
 import { BreadcrumbNav } from '@/app/components/page/breadcrumb-nav'
-import { montserrat } from '@/app/fonts'
+import { stylized } from '@/app/fonts'
 import { useAuthStore } from '@/app/store/auth-store'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
@@ -134,7 +134,7 @@ export function EditProfileContent() {
             />
             <h1
               className={cn(
-                montserrat.className,
+                stylized.className,
                 'scroll-m-20 text-black lg:text-2xl text-xl font-medium tracking-tight lg:mt-4 mt-3',
               )}
             >
@@ -146,7 +146,7 @@ export function EditProfileContent() {
               {/* Edit Form */}
               <div className='mx-auto w-full lg:w-3/7'>
                 <div className='mb-6 text-center'>
-                  <span className={cn(montserrat.className, 'font-semibold text-lg lg:text-xl')}>
+                  <span className={cn(stylized.className, 'font-semibold text-lg lg:text-xl')}>
                     Chỉnh sửa thông tin tài khoản
                   </span>
 

@@ -20,7 +20,7 @@ export const FOOTER_MENUS = {
   aboutUs: {
     title: 'Giới thiệu',
     items: [
-      { label: 'Giới thiệu 3K Shop', url: '/gioi-thieu' },
+      { label: 'Giới thiệu Vinyl Sài Gòn', url: '/gioi-thieu' },
       { label: 'Sản phẩm', url: '/san-pham' },
       { label: 'Thương hiệu', url: '/thuong-hieu' },
     ],

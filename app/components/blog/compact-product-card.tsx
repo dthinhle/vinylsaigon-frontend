@@ -44,7 +44,7 @@ export function CompactProductCard({ product: productHit }: CompactProductCardPr
 
         {variant && variant.name && variant.name !== DEFAULT_VARIANT_NAME && (
           <div className='mt-2'>
-            <span className='text-xs bg-sea-buckthorn-400 text-white py-1 rounded-sm px-2 whitespace-nowrap'>
+            <span className='text-xs bg-atomic-tangerine-300 text-white py-1 rounded-sm px-2 whitespace-nowrap'>
               {variant.name}
             </span>
           </div>

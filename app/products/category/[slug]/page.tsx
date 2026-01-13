@@ -33,7 +33,7 @@ export async function generateMetadata({ params, searchParams }: { params: Promi
 
   if (!category) {
     return {
-      title: 'Danh mục không tìm thấy - 3K Shop',
+      title: 'Danh mục không tìm thấy - Vinyl Sài Gòn',
     }
  }
 
@@ -46,7 +46,7 @@ export async function generateMetadata({ params, searchParams }: { params: Promi
 
   const metaTitle = category.title
   const metaDescription =
-    category.description || `Sản phẩm trong danh mục ${category.title} tại 3K Shop`
+    category.description || `Sản phẩm trong danh mục ${category.title} tại Vinyl Sài Gòn`
 
   // Prepare metadata with pagination structure as per SEO analysis
   const metadata: Metadata = {
@@ -56,7 +56,7 @@ export async function generateMetadata({ params, searchParams }: { params: Promi
       canonical: categoryUrl, // Add canonical URL
     },
     openGraph: {
-      title: `${metaTitle} | 3K Shop`,
+      title: `${metaTitle} | Vinyl Sài Gòn`,
       description: metaDescription,
       url: categoryUrl,
       images: [
@@ -68,7 +68,7 @@ export async function generateMetadata({ params, searchParams }: { params: Promi
     },
     twitter: {
       card: 'summary_large_image',
-      title: `${metaTitle} | 3K Shop`,
+      title: `${metaTitle} | Vinyl Sài Gòn`,
       description: metaDescription,
       images: [category.thumbnail?.url || '/assets/logo.svg'],
     },

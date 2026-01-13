@@ -1,6 +1,6 @@
 import CategoryBox from '@/app/components/category/category-block'
 import HeroBanner from '@/app/components/hero-banner/hero-banner'
-import { montserrat } from '@/app/fonts'
+import { stylized } from '@/app/fonts'
 import { API_URL, FRONTEND_PATH, ROOT_CATEGORIES_FOR_LAYOUT } from '@/lib/constants'
 import { ICategory } from '@/lib/types/category'
 import { LandingPageResponse } from '@/lib/types/hero-banner'
@@ -70,7 +70,7 @@ const Home: React.FC = async () => {
             <div className={'grid-rows-[repeat(3,1fr)] grid-cols-[repeat(3,1fr)] lg:pl-[3vw] grid h-full gap-4 p-3'}>
               <h3
                 className={cn(
-                  montserrat.className,
+                  stylized.className,
                   'font-medium text-white text-[1.8rem] lg:text-[2.375rem] self-end',
                 )}
               >

@@ -12,7 +12,7 @@ export async function generateMetadata({ params, searchParams }: { params: Promi
   const brand = await getBrandData(slug)
   if (!brand) {
     return {
-      title: 'Thương hiệu không tìm thấy - 3K Shop',
+      title: 'Thương hiệu không tìm thấy - Vinyl Sài Gòn',
     }
   }
 
@@ -23,7 +23,7 @@ export async function generateMetadata({ params, searchParams }: { params: Promi
   const brandUrl = page > 1 ? `${brandUrlBase}?page=${page}&per_page=${perPage}` : brandUrlBase
 
   const metaTitle = brand.name
-  const metaDescription = `Khám phá bộ sưu tập sản phẩm ${brand.name} chính hãng tại 3K Shop. Tai nghe, máy nghe nhạc, loa di động ${brand.name} với đầy đủ các dòng sản phẩm mới nhất. Bảo hành chính hãng, tư vấn miễn phí.`
+  const metaDescription = `Khám phá bộ sưu tập sản phẩm ${brand.name} chính hãng tại Vinyl Sài Gòn. Tai nghe, máy nghe nhạc, loa di động ${brand.name} với đầy đủ các dòng sản phẩm mới nhất. Bảo hành chính hãng, tư vấn miễn phí.`
 
   // Prepare metadata with pagination structure as per SEO analysis
   const metadata: Metadata = {
@@ -33,7 +33,7 @@ export async function generateMetadata({ params, searchParams }: { params: Promi
       canonical: brandUrl, // Add canonical URL
     },
     openGraph: {
-      title: `${metaTitle} | 3K Shop`,
+      title: `${metaTitle} | Vinyl Sài Gòn`,
       description: metaDescription,
       url: brandUrl,
       images: [
@@ -45,7 +45,7 @@ export async function generateMetadata({ params, searchParams }: { params: Promi
     },
     twitter: {
       card: 'summary_large_image',
-      title: `${metaTitle} | 3K Shop`,
+      title: `${metaTitle} | Vinyl Sài Gòn`,
       description: metaDescription,
       images: [brand.logoUrl || logoBlack.src],
     },

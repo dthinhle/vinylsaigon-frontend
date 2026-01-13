@@ -1,6 +1,6 @@
 'use client'
 
-import { montserrat } from '@/app/fonts'
+import { stylized } from '@/app/fonts'
 import { cn } from '@/lib/utils'
 import logoBlack from '@/public/assets/logo-black.svg'
 import Image from 'next/image'
@@ -54,15 +54,15 @@ export const BannerCategoryCard: React.FC<BannerCategoryCardProps> = ({
         <div className='absolute bottom-0 left-0 right-0 px-4 py-3'>
           <h3
             className={cn(
-              montserrat.className,
-              'text-white font-semibold text-lg group-hover:text-gray-200 transition-colors',
+              stylized.className,
+              'text-white lg:text-xl text-lg font-bold group-hover:text-gray-200 transition-colors',
             )}
           >
             {category.title}
           </h3>
         </div>
       </div>
-      {isActive && <hr className='mt-1 h-0.75 rounded-t-full bg-gray-950' />}
+      {isActive && <hr className='mt-1 h-0.75 rounded-t-full bg-atomic-tangerine-800 border-atomic-tangerine-800' />}
     </Link>
   )
 }

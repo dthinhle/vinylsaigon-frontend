@@ -1,4 +1,4 @@
-import { montserrat } from '@/app/fonts'
+import { stylized } from '@/app/fonts'
 import { FRONTEND_PATH } from '@/lib/constants'
 import { ICategory } from '@/lib/types/category'
 import { cn } from '@/lib/utils'
@@ -12,7 +12,7 @@ interface CategoryTitleProps {
 
 export const CategoryTitle: React.FC<CategoryTitleProps> = ({ category, activeSlug }) => {
   const titleClassName = cn(
-    montserrat.className,
+    stylized.className,
     'scroll-m-20 text-gray-950 lg:text-3xl text-2xl font-semibold tracking-tight lg:mt-4 mt-2',
   )
 

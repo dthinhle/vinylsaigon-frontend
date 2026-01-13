@@ -1,4 +1,4 @@
-import { montserrat } from '@/app/fonts'
+import { stylized } from '@/app/fonts'
 import { FRONTEND_PATH } from '@/lib/constants'
 import { IBrandList } from '@/lib/types/global'
 import { cn } from '@/lib/utils'
@@ -13,7 +13,7 @@ export const ListBrand = ({ brands }: { brands: IBrandList }) => {
         <Link href={FRONTEND_PATH.brandDetail(brand.slug)} key={brand.id} className='group'>
           <div
             key={`brand-${brand.slug}`}
-            className='p-4 border hover:border-gray-200 border-transparent rounded-none cursor-pointer h-full'
+            className='p-4 border hover:border-atomic-tangerine-100 border-transparent rounded-none cursor-pointer h-full'
           >
             <div className="aspect-square w-full flex items-center mb-4">
               <Image
@@ -30,7 +30,7 @@ export const ListBrand = ({ brands }: { brands: IBrandList }) => {
             {/* Brand title */}
             <h3
               className={cn(
-                montserrat.className,
+                stylized.className,
                 'lg:text-lg font-semibold mt-8 lg:p-4 text-pretty',
               )}
             >

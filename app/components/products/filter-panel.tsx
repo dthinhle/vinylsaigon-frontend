@@ -39,8 +39,8 @@ export const FilterPanel = ({ type }: FilterPanelProps) => {
           category: cn(
             'text-nowrap [&_.ais-CurrentRefinements-delete]:cursor-pointer [&_.ais-CurrentRefinements-delete]:ml-1',
             '[&_.ais-CurrentRefinements-delete]:text-sm/4 [&_.ais-CurrentRefinements-delete]:p-[2px_5px]',
-            '[&_.ais-CurrentRefinements-delete]:bg-sea-buckthorn-200 [&_.ais-CurrentRefinements-delete]:rounded',
-            '[&_.ais-CurrentRefinements-delete]:hover:bg-sea-buckthorn-300',
+            '[&_.ais-CurrentRefinements-delete]:bg-atomic-tangerine-200 [&_.ais-CurrentRefinements-delete]:rounded',
+            '[&_.ais-CurrentRefinements-delete]:hover:bg-atomic-tangerine-300',
           ),
         }}
         excludedAttributes={excludedAttributes}

@@ -2,7 +2,7 @@
 
 import { RelatedProductRow } from '@/app/cart/components/recommend-product/recommend-product'
 import { useToast } from '@/app/cart/ui/toast'
-import { montserrat } from '@/app/fonts'
+import { stylized } from '@/app/fonts'
 import { FRONTEND_PATH } from '@/lib/constants'
 import { IProduct } from '@/lib/types/product'
 import { IProductVariant } from '@/lib/types/variant'
@@ -65,7 +65,7 @@ const ProductDetails: React.FC<Props> = ({ product }) => {
         <div className='max-w-screen-2xl mx-auto'>
           <p
             className={cn(
-              montserrat.className,
+              stylized.className,
               'md:px-2 lg:px-6 px-4 text-left text-xl lg:text-2xl font-medium mb-6',
             )}
           >
@@ -78,7 +78,7 @@ const ProductDetails: React.FC<Props> = ({ product }) => {
         <div className='max-w-screen-2xl mx-auto'>
           <p
             className={cn(
-              montserrat.className,
+              stylized.className,
               'md:px-2 lg:px-6 px-4 text-left text-xl lg:text-2xl font-medium mb-6',
             )}
           >

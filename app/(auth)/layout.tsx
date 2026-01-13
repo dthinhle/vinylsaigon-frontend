@@ -20,7 +20,7 @@ export default function AuthLayout({ children }: { children: React.ReactNode }) 
       <div className='fixed inset-0'>
         <Image
           src={bgImage}
-          alt='3K Shop'
+          alt='Vinyl Sài Gòn'
           fill
           style={{ objectFit: 'cover' }}
           priority

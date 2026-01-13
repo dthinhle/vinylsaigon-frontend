@@ -12,11 +12,11 @@ export const dynamic = 'force-static'
 export const metadata: Metadata = {
   title: 'Liên Hệ',
   description:
-    'Liên hệ với 3K Shop - chuyên cung cấp tai nghe, DAC/Amp chất lượng cao. Tư vấn chuyên nghiệp và hỗ trợ khách hàng tận tâm.',
+    'Liên hệ với Vinyl Sài Gòn - chuyên cung cấp tai nghe, DAC/Amp chất lượng cao. Tư vấn chuyên nghiệp và hỗ trợ khách hàng tận tâm.',
   openGraph: {
-    title: 'Liên Hệ | 3K Shop',
+    title: 'Liên Hệ | Vinyl Sài Gòn',
     description:
-      'Liên hệ với 3K Shop - chuyên cung cấp tai nghe, DAC/Amp chất lượng cao. Tư vấn chuyên nghiệp và hỗ trợ khách hàng tận tâm.',
+      'Liên hệ với Vinyl Sài Gòn - chuyên cung cấp tai nghe, DAC/Amp chất lượng cao. Tư vấn chuyên nghiệp và hỗ trợ khách hàng tận tâm.',
     type: 'website',
     url: `${process.env.NEXT_PUBLIC_APP_URL || 'https://vinylsaigon.vn'}/lien-he`,
     images: [
@@ -24,15 +24,15 @@ export const metadata: Metadata = {
         url: ogImage.src,
         width: 2048,
         height: 1366,
-        alt: 'Liên Hệ 3K Shop',
+        alt: 'Liên Hệ Vinyl Sài Gòn',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Liên Hệ | 3K Shop',
+    title: 'Liên Hệ | Vinyl Sài Gòn',
     description:
-      'Liên hệ với 3K Shop - chuyên cung cấp tai nghe, DAC/Amp chất lượng cao. Tư vấn chuyên nghiệp và hỗ trợ khách hàng tận tâm.',
+      'Liên hệ với Vinyl Sài Gòn - chuyên cung cấp tai nghe, DAC/Amp chất lượng cao. Tư vấn chuyên nghiệp và hỗ trợ khách hàng tận tâm.',
     images: [ogImage.src],
   },
   alternates: {
@@ -94,42 +94,42 @@ export default function ContactPage() {
     mainEntity: [
       {
         '@type': 'Question',
-        name: '3K Shop chuyên cung cấp những sản phẩm gì?',
+        name: 'Vinyl Sài Gòn chuyên cung cấp những sản phẩm gì?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: '3K Shop chuyên cung cấp các sản phẩm tai nghe, DAC/Amp chất lượng cao. Chúng tôi tập trung vào các sản phẩm âm thanh chính hãng với chất lượng tốt về cả chất âm, độ bền và chế độ bảo hành cho khách hàng.',
+          text: 'Vinyl Sài Gòn chuyên cung cấp các sản phẩm tai nghe, DAC/Amp chất lượng cao. Chúng tôi tập trung vào các sản phẩm âm thanh chính hãng với chất lượng tốt về cả chất âm, độ bền và chế độ bảo hành cho khách hàng.',
         },
       },
       {
         '@type': 'Question',
-        name: 'Số điện thoại liên hệ với 3K Shop là gì?',
+        name: 'Số điện thoại liên hệ với Vinyl Sài Gòn là gì?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Bạn có thể liên hệ với 3K Shop qua số điện thoại: (028) 38 202 909 hoặc 0914 345 357. Đây là các số điện thoại chính thức của cửa hàng để hỗ trợ khách hàng.',
+          text: 'Bạn có thể liên hệ với Vinyl Sài Gòn qua số điện thoại: (028) 38 202 909 hoặc 0914 345 357. Đây là các số điện thoại chính thức của cửa hàng để hỗ trợ khách hàng.',
         },
       },
       {
         '@type': 'Question',
-        name: 'Thời gian làm việc của 3K Shop như thế nào?',
+        name: 'Thời gian làm việc của Vinyl Sài Gòn như thế nào?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Thời gian làm việc của 3K Shop: Từ thứ 2 đến thứ 7: 8h30 – 20h00. Chủ nhật: 8h30 – 19h00. Thời gian nhận bảo hành & sửa chữa: 10h00 – 18h30.',
+          text: 'Thời gian làm việc của Vinyl Sài Gòn: Từ thứ 2 đến thứ 7: 8h30 – 20h00. Chủ nhật: 8h30 – 19h00. Thời gian nhận bảo hành & sửa chữa: 10h00 – 18h30.',
         },
       },
       {
         '@type': 'Question',
-        name: '3K Shop có hỗ trợ bảo hành sản phẩm không?',
+        name: 'Vinyl Sài Gòn có hỗ trợ bảo hành sản phẩm không?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Có, 3K Shop có hỗ trợ nhận bảo hành và sửa chữa sản phẩm. Thời gian nhận bảo hành & sửa chữa là từ 10h00 – 18h30 hàng ngày.',
+          text: 'Có, Vinyl Sài Gòn có hỗ trợ nhận bảo hành và sửa chữa sản phẩm. Thời gian nhận bảo hành & sửa chữa là từ 10h00 – 18h30 hàng ngày.',
         },
       },
       {
         '@type': 'Question',
-        name: 'Tại sao nên chọn mua hàng tại 3K Shop?',
+        name: 'Tại sao nên chọn mua hàng tại Vinyl Sài Gòn?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: '3K Shop cam kết chỉ bán hàng chính hãng với chất lượng tốt nhất, bao gồm cả chất âm, độ bền và chế độ bảo hành. Chúng tôi được thành lập bởi những người trẻ có niềm đam mê với âm thanh, luôn cố gắng mang đến những sản phẩm tốt nhất với giá thành hợp lý.',
+          text: 'Vinyl Sài Gòn cam kết chỉ bán hàng chính hãng với chất lượng tốt nhất, bao gồm cả chất âm, độ bền và chế độ bảo hành. Chúng tôi được thành lập bởi những người trẻ có niềm đam mê với âm thanh, luôn cố gắng mang đến những sản phẩm tốt nhất với giá thành hợp lý.',
         },
       },
     ],
@@ -142,11 +142,11 @@ export default function ContactPage() {
       <div className='max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8'>
         <section className='py-12 lg:py-16'>
           <div className='mb-16'>
-            <h2 className='text-2xl font-bold text-gray-900 mb-8'>Giới thiệu về 3K Shop</h2>
+            <h2 className='text-2xl font-bold text-gray-900 mb-8'>Giới thiệu về Vinyl Sài Gòn</h2>
             <div className='grid grid-cols-1 md:grid-cols-3 gap-12'>
               <div className='text-gray-700 text-sm leading-relaxed'>
                 <p className='mb-4 text-pretty text-justify'>
-                  3K Shop được thành lập bởi các những bạn trẻ có niềm đam mê bất tận với âm thanh,
+                  Vinyl Sài Gòn được thành lập bởi các những bạn trẻ có niềm đam mê bất tận với âm thanh,
                   chính niềm đam mê đó đã giúp những anh em hội tụ, gắn kết, khao khát mang nhiều mẫu
                   headphone, DAC/Amp mới về để trải nghiệm thỏa đam mê chứ không phải mục đích kinh
                   doanh.
@@ -154,16 +154,16 @@ export default function ContactPage() {
               </div>
               <div className='text-gray-700 text-sm leading-relaxed'>
                 <p className='mb-4 text-pretty text-justify'>
-                  Một trong những điều quan trọng nhất mà 3K Shop mong muốn nhất chính là mang đến
+                  Một trong những điều quan trọng nhất mà Vinyl Sài Gòn mong muốn nhất chính là mang đến
                   những sản phẩm có chất lượng tốt; tốt ở đây chính là về cả chất âm, độ bền cũng như
                   chế độ bảo hành cho khách hàng.
                 </p>
               </div>
               <div className='text-gray-700 text-sm leading-relaxed'>
                 <p className='mb-4 text-pretty text-justify'>
-                  Chính vì vậy, 3K Shop luôn cố gắng làm việc để có những sản phẩm chính hãng tốt
+                  Chính vì vậy, Vinyl Sài Gòn luôn cố gắng làm việc để có những sản phẩm chính hãng tốt
                   nhất, cùng với giá thành tốt nhất. Các sản phẩm có chất lượng không tốt chắc chắn sẽ
-                  không bao giờ hiện hữu tại 3K Shop.
+                  không bao giờ hiện hữu tại Vinyl Sài Gòn.
                 </p>
               </div>
             </div>

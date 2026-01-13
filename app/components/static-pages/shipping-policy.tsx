@@ -36,7 +36,7 @@ const ShipingPolicy: React.FC = () => {
                 <li>
                   <strong>
                     <em>Lưu ý:</em>{' '}
-                    <span className='text-sea-buckthorn-500'>
+                    <span className='text-atomic-tangerine-500'>
                       Đơn hàng thanh toán theo phương thức COD sẽ có thêm phí thu hộ. Quý khách hàng
                       có nhu cầu trải nghiệm sản phẩm, xin vui lòng đến cửa hàng, chúng tôi không hỗ
                       trợ việc trải nghiệm sản phẩm ngoài khu vực cửa hàng.
@@ -81,7 +81,7 @@ const ShipingPolicy: React.FC = () => {
             <li>
               <strong>
                 <em>Lưu ý:</em>{' '}
-                <span className='text-sea-buckthorn-500'>
+                <span className='text-atomic-tangerine-500'>
                   Đơn hàng thanh toán theo phương thức COD sẽ có thêm phí thu hộ. Quý khách hàng có
                   nhu cầu trải nghiệm sản phẩm, xin vui lòng đến cửa hàng, chúng tôi không hỗ trợ
                   việc trải nghiệm sản phẩm ngoài khu vực cửa hàng.

@@ -10,7 +10,7 @@ import * as React from 'react'
 import { FormEventHandler, useState } from 'react'
 import { z } from 'zod'
 
-import { montserrat } from '../fonts'
+import { stylized } from '../fonts'
 
 const orderTrackingSchema = z.object({
   email: z.email('Email không hợp lệ.').min(1, 'Vui lòng nhập địa chỉ email.'),
@@ -77,7 +77,7 @@ export const FindOrderForm: React.FC<Props> = ({ loading, handleSearch }) => {
       onSubmit={onSubmit}
     >
       <div className='text-center mb-4'>
-        <h1 className={cn('mt-8 text-2xl tracking-tight', montserrat.className)}>
+        <h1 className={cn('mt-8 text-2xl tracking-tight', stylized.className)}>
           Theo dõi đơn hàng
         </h1>
         <p className='mt-4 text-sm text-gray-600 text-pretty mx-4'>

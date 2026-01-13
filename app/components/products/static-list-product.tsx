@@ -86,9 +86,9 @@ export const SHARED_CLASSES = {
     item: 'block w-full text-left px-2 py-0.5 hover:bg-gray-100 rounded',
     label: 'flex items-center cursor-pointer',
     labelText: 'ml-2 flex-grow text-nowrap text-ellipsis overflow-hidden',
-    checkbox: 'accent-sea-buckthorn-400',
+    checkbox: 'accent-atomic-tangerine-300',
     count: 'ml-2 p-1.25 text-[10px]/2 bg-gray-500 text-white rounded',
-    showMore: 'text-sm/3 block mx-auto my-2 text-sea-buckthorn-500 hover:underline cursor-pointer',
+    showMore: 'text-sm/3 block mx-auto my-2 text-atomic-tangerine-500 hover:underline cursor-pointer',
   },
   hierarchicalMenu: {
     root: 'text-base space-y-2',
@@ -97,9 +97,9 @@ export const SHARED_CLASSES = {
     selectedItem: '[&>a>span.ais-HierarchicalMenu-label]:font-bold',
     label: 'flex flex-grow cursor-pointer',
     labelText: 'ml-2 flex-grow text-nowrap text-ellipsis overflow-hidden',
-    checkbox: 'accent-sea-buckthorn-400',
+    checkbox: 'accent-atomic-tangerine-300',
     count: 'mx-2 p-1.25 text-[10px]/2 bg-gray-500 text-white rounded',
     showMore:
-      'text-base/3 block mx-auto mt-2 text-sea-buckthorn-500 hover:underline cursor-pointer',
+      'text-base/3 block mx-auto mt-2 text-atomic-tangerine-500 hover:underline cursor-pointer',
   },
 }

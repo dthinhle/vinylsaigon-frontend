@@ -1,6 +1,6 @@
 'use client'
 
-import { montserrat } from '@/app/fonts'
+import { stylized } from '@/app/fonts'
 import { useAuthStore } from '@/app/store/auth-store'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
@@ -139,9 +139,9 @@ export default function ForgotPasswordPage() {
     <div className='w-full max-w-100 space-y-8 bg-white p-8 rounded-lg shadow-sm'>
       <div className='flex flex-col items-center justify-center text-center'>
         <Link href='/'>
-          <Image src={logoBlack} alt='3K Shop' className='w-32 h-auto' priority unoptimized />
+          <Image src={logoBlack} alt='Vinyl Sài Gòn' className='w-32 h-auto' priority unoptimized />
         </Link>
-        <h1 className={cn('mt-8 text-2xl tracking-tight', montserrat.className)}>Quên mật khẩu?</h1>
+        <h1 className={cn('mt-8 text-2xl tracking-tight', stylized.className)}>Quên mật khẩu?</h1>
         <p className='mt-4 text-sm text-gray-600 text-pretty mx-4'>
           Nhập email của bạn và chúng tôi sẽ gửi hướng dẫn đặt lại mật khẩu
         </p>

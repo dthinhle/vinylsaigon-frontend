@@ -14,7 +14,7 @@ async function generateMetadataWithPagination(): Promise<Metadata> {
   // Prepare pagination metadata structure as recommended in SEO analysis
   // This structure is ready for when pagination is implemented in the future
   const title = 'Kết quả tìm kiếm'
-  const description = 'Tìm kiếm tai nghe cao cấp, tai nghe true wireless, tai nghe chống ồn, mâm đĩa than, đĩa vinyl, máy nghe nhạc, loa di động tại 3K Shop. Tìm sản phẩm yêu thích với giá cả hợp lý.'
+  const description = 'Tìm kiếm tai nghe cao cấp, tai nghe true wireless, tai nghe chống ồn, mâm đĩa than, đĩa vinyl, máy nghe nhạc, loa di động tại Vinyl Sài Gòn. Tìm sản phẩm yêu thích với giá cả hợp lý.'
   const metadata: Metadata = {
     title,
     description,
@@ -31,7 +31,7 @@ async function generateMetadataWithPagination(): Promise<Metadata> {
           url: allProducts.src,
           width: 3000,
           height: 1994,
-          alt: 'Kết quả tìm kiếm | 3K Shop',
+          alt: 'Kết quả tìm kiếm | Vinyl Sài Gòn',
         },
       ],
     },

@@ -12,28 +12,28 @@ export async function generateMetadata(): Promise<Metadata> {
   const metadata: Metadata = {
     title: 'Tin Tức',
     description:
-      'Tin tức mới nhất về tai nghe, audio, công nghệ âm thanh và các sản phẩm điện tử tại 3K Shop',
+      'Tin tức mới nhất về tai nghe, audio, công nghệ âm thanh và các sản phẩm điện tử tại Vinyl Sài Gòn',
     alternates: {
       canonical,
     },
     openGraph: {
-      title: 'Tin Tức | 3K Shop',
+      title: 'Tin Tức | Vinyl Sài Gòn',
       description:
-        'Tin tức mới nhất về tai nghe, audio, công nghệ âm thanh và các sản phẩm điện tử tại 3K Shop',
+        'Tin tức mới nhất về tai nghe, audio, công nghệ âm thanh và các sản phẩm điện tử tại Vinyl Sài Gòn',
       type: 'website',
       url: canonical,
       images: [
         {
           url: newsBanner.src,
-          alt: 'Tin Tức | 3K Shop',
+          alt: 'Tin Tức | Vinyl Sài Gòn',
         },
       ],
     },
     twitter: {
       card: 'summary_large_image',
-      title: 'Tin Tức | 3K Shop',
+      title: 'Tin Tức | Vinyl Sài Gòn',
       description:
-        'Tin tức mới nhất về tai nghe, audio, công nghệ âm thanh và các sản phẩm điện tử tại 3K Shop',
+        'Tin tức mới nhất về tai nghe, audio, công nghệ âm thanh và các sản phẩm điện tử tại Vinyl Sài Gòn',
       images: [newsBanner.src],
     },
   }
@@ -64,7 +64,7 @@ export default function NewsPage() {
           <p className='text-gray-700 mt-6 text-sm lg:text-base text-center text-pretty lg:max-w-1/2 md:max-w-3/4 max-w-full md:mx-0 mx-6'>
             Cập nhật những tin tức mới nhất về
             <br className='lg:block hidden' />
-            công nghệ âm thanh, đánh giá sản phẩm, sự kiện và xu hướng audio tại 3K Shop.
+            công nghệ âm thanh, đánh giá sản phẩm, sự kiện và xu hướng audio tại Vinyl Sài Gòn.
           </p>
           <BlogList />
           <ScrollToTop />

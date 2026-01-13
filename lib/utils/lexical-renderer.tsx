@@ -86,7 +86,7 @@ function renderLinkNode(node: LinkNode, key: number): ReactNode {
       target={node.target || undefined}
       rel={node.rel || undefined}
       title={node.title || undefined}
-      className='text-sea-buckthorn-500 hover:text-sea-buckthorn-700 transition-colors'
+      className='text-atomic-tangerine-500 hover:text-atomic-tangerine-700 transition-colors'
     >
       {node.children.map((child, i) => renderInlineNode(child, i))}
     </Link>

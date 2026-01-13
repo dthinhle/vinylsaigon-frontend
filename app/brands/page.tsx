@@ -10,14 +10,14 @@ import { ListBrand } from '../components/brands/list-brand'
 export const metadata: Metadata = {
   title: 'Thương hiệu',
   description:
-    'Khám phá các thương hiệu tai nghe cao cấp, tai nghe true wireless, tai nghe chống ồn, mâm đĩa than, đĩa vinyl, máy nghe nhạc, loa di động tại 3K Shop. Chất lượng cao, giá cả hợp lý.',
+    'Khám phá các thương hiệu tai nghe cao cấp, tai nghe true wireless, tai nghe chống ồn, mâm đĩa than, đĩa vinyl, máy nghe nhạc, loa di động tại Vinyl Sài Gòn. Chất lượng cao, giá cả hợp lý.',
   alternates: {
     canonical: `${process.env.NEXT_PUBLIC_APP_URL}/brands`,
   },
   openGraph: {
     title: 'Thương hiệu',
     description:
-      'Khám phá các thương hiệu tai nghe cao cấp, tai nghe true wireless, tai nghe chống ồn, mâm đĩa than, đĩa vinyl, máy nghe nhạc, loa di động tại 3K Shop. Chất lượng cao, giá cả hợp lý.',
+      'Khám phá các thương hiệu tai nghe cao cấp, tai nghe true wireless, tai nghe chống ồn, mâm đĩa than, đĩa vinyl, máy nghe nhạc, loa di động tại Vinyl Sài Gòn. Chất lượng cao, giá cả hợp lý.',
     url: `${process.env.NEXT_PUBLIC_APP_URL}/brands`,
     type: 'website',
     images: [
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
         url: brands.src,
         width: 3000,
         height: 1994,
-        alt: 'Thương hiệu | 3K Shop',
+        alt: 'Thương hiệu | Vinyl Sài Gòn',
       },
     ],
   },
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Thương hiệu',
     description:
-      'Khám phá các thương hiệu tai nghe cao cấp, tai nghe true wireless, tai nghe chống ồn, mâm đĩa than, đĩa vinyl, máy nghe nhạc, loa di động tại 3K Shop. Chất lượng cao, giá cả hợp lý.',
+      'Khám phá các thương hiệu tai nghe cao cấp, tai nghe true wireless, tai nghe chống ồn, mâm đĩa than, đĩa vinyl, máy nghe nhạc, loa di động tại Vinyl Sài Gòn. Chất lượng cao, giá cả hợp lý.',
     images: [brands.src],
   },
 }

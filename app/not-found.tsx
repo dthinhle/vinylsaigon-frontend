@@ -2,7 +2,7 @@ import { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Không tìm thấy trang - 3K Shop',
+  title: 'Không tìm thấy trang - Vinyl Sài Gòn',
   description: 'Trang bạn đang tìm kiếm không tồn tại hoặc đã được di chuyển.',
 }
 
@@ -21,7 +21,7 @@ export default function NotFound() {
         <div className='space-y-4'>
           <Link
             href='/'
-            className='w-full flex justify-center py-3 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-black hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 transition-colors'
+            className='w-full flex justify-center py-3 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-amber-300 hover:bg-amber-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-amber-500 transition-colors'
           >
             Về trang chủ
           </Link>

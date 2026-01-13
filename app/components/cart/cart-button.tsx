@@ -51,7 +51,7 @@ export function CartButton() {
 
   return (
     <Link href='/gio-hang' className='relative'>
-      <ShoppingCart strokeWidth={1.25} className='cursor-pointer hover:text-gray-700' />
+      <ShoppingCart strokeWidth={2} className='cursor-pointer hover:text-gray-700' />
       <AnimatePresence>
         {itemCount > 0 && (
           <motion.span
@@ -60,7 +60,7 @@ export function CartButton() {
             exit='exit'
             variants={variants}
             transition={{ type: 'spring', stiffness: 500, damping: 30 }}
-            className='absolute -top-1 -right-2 bg-amber-500 text-white text-[8px] min-w-4 rounded-full p-0.5 flex items-center justify-center'
+            className='absolute -top-1 -right-2 bg-atomic-tangerine-400 text-white text-[8px] min-w-4 rounded-full p-0.5 flex items-center justify-center'
           >
             {itemCount > 99 ? '99+' : itemCount}
           </motion.span>
@@ -74,7 +74,7 @@ export function CartButton() {
 export function CartButtonFallback() {
   return (
     <Link href='/gio-hang'>
-      <ShoppingCart strokeWidth={1.25} className='cursor-pointer hover:text-gray-700' />
+      <ShoppingCart strokeWidth={2} className='cursor-pointer hover:text-gray-700' />
     </Link>
   )
 }

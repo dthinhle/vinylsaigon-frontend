@@ -2,7 +2,7 @@
 
 import { AccountSidebar } from '@/app/components/account'
 import { BreadcrumbNav } from '@/app/components/page/breadcrumb-nav'
-import { montserrat } from '@/app/fonts'
+import { stylized } from '@/app/fonts'
 import { Button } from '@/components/ui/button'
 import { FRONTEND_PATH } from '@/lib/constants'
 import { cn } from '@/lib/utils'
@@ -197,7 +197,7 @@ export function OrderContent() {
             />
             <h1
               className={cn(
-                montserrat.className,
+                stylized.className,
                 'scroll-m-20 text-black lg:text-2xl text-xl font-medium tracking-tight lg:mt-4 mt-3',
               )}
             >

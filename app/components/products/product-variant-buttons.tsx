@@ -30,7 +30,7 @@ export const ProductVariantButtons = React.memo(
             className={cn(
               'lg:size-12 size-10 rounded border-0 transition-all bg-(image:--variant-image) bg-cover bg-center cursor-pointer',
               selectedVariant === variant.slug
-                ? 'border-sea-buckthorn-500 scale-110 border-2'
+                ? 'border-atomic-tangerine-500 scale-110 border-2'
                 : 'border-gray-200',
             )}
             style={

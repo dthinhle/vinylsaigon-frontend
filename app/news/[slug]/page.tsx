@@ -2,7 +2,7 @@ import { BlogPost } from '@/app/components/blog/blog-data-types'
 import BlogViewCount from '@/app/components/blog/blog-view-count'
 import { RelatedProducts } from '@/app/components/blog/related-products'
 import { BreadcrumbNav, BreadcrumbNode } from '@/app/components/page/breadcrumb-nav'
-import { montserrat } from '@/app/fonts'
+import { stylized } from '@/app/fonts'
 import { API_URL, FRONTEND_PATH } from '@/lib/constants'
 import { getAlternateUrls } from '@/lib/language-utils'
 import { SlugPageProps } from '@/lib/types/global'
@@ -40,12 +40,12 @@ export async function generateMetadata({ params }: SlugPageProps): Promise<Metad
   const post = await getBlogPost(slug)
   if (!post) {
     return {
-      title: 'Bài viết không tìm thấy - 3K Shop',
+      title: 'Bài viết không tìm thấy - Vinyl Sài Gòn',
     }
   }
 
   const metaTitle = post.title || 'Bài viết không tìm thấy'
-  const metaDescription = post.shortDescription || 'Xem bài viết chi tiết tại 3K Shop'
+  const metaDescription = post.shortDescription || 'Xem bài viết chi tiết tại Vinyl Sài Gòn'
   const metaUrl = `${API_URL}/tin-tuc/${post.slug}`
   const metaImageUrl = post.imageUrl || logoSvg.src
 
@@ -129,7 +129,7 @@ export default async function BlogPostPage({ params }: SlugPageProps) {
     },
     publisher: {
       '@type': 'Organization',
-      name: '3K Shop',
+      name: 'Vinyl Sài Gòn',
       logo: {
         '@type': 'ImageObject',
         url: `${process.env.NEXT_PUBLIC_APP_URL || API_URL}/assets/logo.svg`,
@@ -158,7 +158,7 @@ export default async function BlogPostPage({ params }: SlugPageProps) {
         }}
       />
       <div className='flex justify-start lg:mt-19'>
-        <div className='px-6 mb-2 lg:px-10 max-w-screen-2xl w-full mx-auto lg:pt-6 pt-20'>
+        <div className='px-6 mb-2 lg:px-10 max-w-screen-2xl w-full mx-auto lg:pt-6 pt-24'>
           <BreadcrumbNav
             nodes={breadcrumbNodes}
             classNames={{
@@ -195,10 +195,10 @@ export default async function BlogPostPage({ params }: SlugPageProps) {
           </div>
         </div>
         <div className='order-2 md:order-2 lg:px-24 md:px-12 px-6 max-w-screen-lg'>
-          <Image alt='Logo 3K Shop' src={logoBlack} className='w-36 h-auto my-12 md:block hidden' unoptimized />
+          <Image alt='Logo Vinyl Sài Gòn' src={logoBlack} className='w-36 h-auto my-12 md:block hidden' unoptimized />
           <h1
             className={cn(
-              montserrat.className,
+              stylized.className,
               'text-2xl lg:text-4xl font-medium text-gray-900 md:mb-6 mb-2 text-pretty break-words',
             )}
           >
@@ -236,7 +236,7 @@ export default async function BlogPostPage({ params }: SlugPageProps) {
                 href={FRONTEND_PATH.newsDetail(post.previousPost.slug)}
                 className='hover:underline text-gray-950 hover:text-gray-700 flex md:items-center items-center gap-2'
               >
-                <ArrowLeft strokeWidth={1.25} className='min-w-6 lg:order-0 order-1' />
+                <ArrowLeft strokeWidth={2} className='min-w-6 lg:order-0 order-1' />
                 <span className='line-clamp-2'>
                   <span className='lg:hidden font-bold mr-2'>Bài viết trước:</span>
                   {post.previousPost.title}

@@ -2,9 +2,9 @@ import { MetadataRoute } from 'next'
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: '3K Shop - Tai Nghe & Thiết Bị Âm Thanh',
-    short_name: '3K Shop',
-    description: '3K Shop chuyên tai nghe cao cấp, thiết bị âm thanh chính hãng',
+    name: 'Vinyl Sài Gòn - Tai Nghe & Thiết Bị Âm Thanh',
+    short_name: 'Vinyl Sài Gòn',
+    description: 'Vinyl Sài Gòn chuyên tai nghe cao cấp, thiết bị âm thanh chính hãng',
     start_url: '/',
     display: 'standalone',
     background_color: '#ffffff',

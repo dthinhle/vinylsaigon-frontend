@@ -16,7 +16,7 @@ const SECTIONS: PolicySection[] = [
           hàng có cơ hội sở hữu sản phẩm công nghệ dễ dàng mà không cần mất thời gian dài tích lũy
           tài chính. So với các phương thức trả góp truyền thống, trả góp tại 3K cho phép rút ngắn
           mọi quy trình xét duyệt hồ sơ cũng như lượt bỏ các thủ tục rườm rà mang đến cho khách hàng
-          sự tiện lợi và đơn giản hơn hết. Thông qua bài viết này, 3K Shop muốn chia sẻ đến bạn 3
+          sự tiện lợi và đơn giản hơn hết. Thông qua bài viết này, Vinyl Sài Gòn muốn chia sẻ đến bạn 3
           cách mua hàng trả góp tại hệ thống cửa hàng và website{' '}
           <a href='https://www.vinylsaigon.vn' target='_blank' rel='noopener'>
             www.vinylsaigon.vn
@@ -50,13 +50,9 @@ const SECTIONS: PolicySection[] = [
         </p>
         <ul>
           <li>
-            <strong>Bước 1:</strong> Khách hàng lựa chọn sản phẩm cần mua tại cửa hàng 3K Shop ở một
-            trong hai địa chỉ sau:
+            <strong>Bước 1:</strong> Khách hàng lựa chọn sản phẩm cần mua tại cửa hàng Vinyl Sài Gòn ở
+            địa chỉ sau:
             <ul className='list-disc ml-4'>
-              <li>
-                <span>14 Nguyễn Văn Giai, P. Đa Kao, Q.1</span>
-                <p>(028) 38 202 909 – <PhoneNumber number='0914 345 357' /></p>
-              </li>
               <li>
                 <span>6B Đinh Bộ Lĩnh, P.24, Q. Bình Thạnh</span>
                 <p>(028) 38 202 909 – <PhoneNumber number='0914 345 357' /></p>
@@ -114,7 +110,7 @@ const SECTIONS: PolicySection[] = [
           />
         </div>
         <p className='text-center italic'>
-          Chương trình trả góp ưu đãi từ HD Saigon dành riêng cho khách hàng 3K Shop
+          Chương trình trả góp ưu đãi từ HD Saigon dành riêng cho khách hàng Vinyl Sài Gòn
         </p>
         <strong>Thông tin chung</strong>
         <ul className='list-disc ml-4 mb-4'>
@@ -151,11 +147,11 @@ const SECTIONS: PolicySection[] = [
     ),
   },
   {
-    title: '3. Mua hàng trả góp qua thẻ tín dụng tại website 3K Shop',
+    title: '3. Mua hàng trả góp qua thẻ tín dụng tại website Vinyl Sài Gòn',
     content: (
       <>
         <p>
-          Để mua hàng tại website của 3K Shop, bạn truy cập vào địa chỉ{' '}
+          Để mua hàng tại website của Vinyl Sài Gòn, bạn truy cập vào địa chỉ{' '}
           <a href='https://www.vinylsaigon.vn' target='_blank' rel='noopener'>
             www.vinylsaigon.vn
           </a>{' '}
@@ -172,7 +168,7 @@ const SECTIONS: PolicySection[] = [
           />
         </div>
         <p className='text-center italic'>
-          Giao diện trang sản phẩm của 3K Shop được phân loại rõ ràng theo từng nhóm
+          Giao diện trang sản phẩm của Vinyl Sài Gòn được phân loại rõ ràng theo từng nhóm
         </p>
         <p>
           Bên cạnh đó, bạn cũng có thể tìm kiếm nhanh sản phẩm cần mua bằng khung tìm kiếm ở góc
@@ -265,11 +261,11 @@ const SECTIONS: PolicySection[] = [
             />
           </div>
           <p className='text-center italic'>
-            Khi mua hàng tại 3K Shop bạn có thể thanh toán bằng nhiều hình thức khác nhau
+            Khi mua hàng tại Vinyl Sài Gòn bạn có thể thanh toán bằng nhiều hình thức khác nhau
           </p>
           <p>
             Trước chọn thanh toán trả góp, bạn nên xem qua chính sách mua{' '}
-            <strong>trả góp qua thẻ tín dụng</strong> tại 3K Shop và chính sách của ngân hàng phát
+            <strong>trả góp qua thẻ tín dụng</strong> tại Vinyl Sài Gòn và chính sách của ngân hàng phát
             hành thẻ tín dụng của bạn. Sau đó, nhấp vào nút “Thanh toán ngay” ở bên phải.
           </p>
         </section>
@@ -288,7 +284,7 @@ const SECTIONS: PolicySection[] = [
             />
           </div>
           <p className='text-center italic'>
-            3K Shop hỗ trợ thanh toán trả góp qua thẻ tín dụng của hầu hết ngân hàng Việt Nam
+            Vinyl Sài Gòn hỗ trợ thanh toán trả góp qua thẻ tín dụng của hầu hết ngân hàng Việt Nam
           </p>
           <p>Chọn loại thẻ Visa hoặc Mastercard</p>
           <div className='flex justify-center my-4'>
@@ -368,7 +364,7 @@ const SECTIONS: PolicySection[] = [
     ),
   },
   {
-    title: 'Một số lưu ý khi mua hàng trả góp online tại 3K Shop',
+    title: 'Một số lưu ý khi mua hàng trả góp online tại Vinyl Sài Gòn',
     content: (
       <>
         <ul>
