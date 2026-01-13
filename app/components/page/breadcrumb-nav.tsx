@@ -6,7 +6,7 @@ import {
   BreadcrumbSeparator,
 } from '@/components/ui/breadcrumb'
 import { cn } from '@/lib/utils'
-import { CopySlash, Slash, SlashIcon, SlashSquare } from 'lucide-react'
+import { Slash } from 'lucide-react'
 import * as React from 'react'
 
 export interface BreadcrumbNode {
