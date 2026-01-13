@@ -1,0 +1,65 @@
+{
+  "items": [
+    {
+      "id": "item-1",
+      "productId": "prod-101",
+      "name": "Classic T-Shirt",
+      "variant": {
+        "id": "variant-1",
+        "name": "Blue",
+        "size": "M"
+      },
+      "quantity": 2,
+      "price": 15000000,
+      "image": "https://vinylsaigon.vn/wp-content/uploads/fly-images/29623/DDA24146-9E89-49E0-8CB0-C5068226AF5F-450x450-c.png",
+      "inStock": true,
+      "maxQuantity": 5
+    },
+    {
+      "id": "item-2",
+      "productId": "prod-202",
+      "name": "Sneakers",
+      "variant": {
+        "id": "variant-2",
+        "name": "White",
+        "size": "42"
+      },
+      "quantity": 1,
+      "price": 5900000,
+      "image": "https://vinylsaigon.vn/wp-content/uploads/fly-images/21765/apple-airpods-pro-5-450x450-c.jpg",
+      "inStock": true
+    }
+  ],
+  "summary": {
+    "subtotal": 99.97,
+    "shipping": 5.0,
+    "tax": 8.0,
+    "discount": 10.0,
+    "total": 102.97,
+    "currency": "USD"
+  },
+  "promoCode": {
+    "code": "SUMMER10",
+    "isApplied": true,
+    "discountAmount": 10.0,
+    "success": true
+  },
+  "ui": {
+    "isLoading": false,
+    "errors": [],
+    "summaryExpanded": true
+  },
+  "shipping": {
+    "address": "123 Main St",
+    "city": "Metropolis",
+    "postalCode": "12345",
+    "country": "USA",
+    "shippingMethod": "Standard",
+    "shippingCost": 5.0,
+    "estimatedDelivery": "2025-08-20",
+    "freeShippingThreshold": 100.0
+  },
+  "payment": {
+    "isProcessing": false
+  }
+}

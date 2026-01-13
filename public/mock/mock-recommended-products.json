@@ -1,0 +1,132 @@
+{
+  "items": [
+    {
+      "id": 101,
+      "name": "Sản phẩm nổi bật 1",
+      "description": "Mô tả sản phẩm 1",
+      "slug": "san-pham-noi-bat-1",
+      "tags": [],
+      "collections": [],
+      "images": ["https://vinylsaigon.vn/wp-content/uploads/2025/07/vinylsaigon.vn_.starcity8.webp"],
+      "seo": {
+        "title": "Sản phẩm nổi bật 1",
+        "description": ""
+      },
+      "categories": {
+        "lv0": "Danh mục 1",
+        "lv1": ""
+      },
+      "variants": [
+        {
+          "name": "Default",
+          "shortDescription": null,
+          "price": "0",
+          "variantAttributes": {},
+          "images": ["https://vinylsaigon.vn/wp-content/uploads/2025/07/vinylsaigon.vn_.starcity8.webp"]
+        }
+      ],
+      "originalPrice": "200000",
+      "currentPrice": "150000",
+      "brands": ["3KShop"],
+      "flags": [],
+      "__position": 1,
+      "objectID": "101"
+    },
+    {
+      "id": 11,
+      "name": "Sản phẩm nổi bật 00",
+      "description": "Mô tả sản phẩm 0",
+      "slug": "san-pham-noi-bat-0",
+      "tags": [],
+      "collections": [],
+      "images": ["https://vinylsaigon.vn/wp-content/uploads/2025/07/vinylsaigon.vn_.starcity8.webp"],
+      "seo": {
+        "title": "Sản phẩm nổi bật 0",
+        "description": ""
+      },
+      "categories": {
+        "lv0": "Danh mục 0",
+        "lv1": ""
+      },
+      "variants": [
+        {
+          "name": "Default",
+          "shortDescription": null,
+          "price": "0",
+          "variantAttributes": {},
+          "images": ["https://vinylsaigon.vn/wp-content/uploads/2025/07/vinylsaigon.vn_.starcity8.webp"]
+        }
+      ],
+      "originalPrice": "200000",
+      "currentPrice": "150000",
+      "brands": ["3KShop"],
+      "flags": [],
+      "__position": 0,
+      "objectID": "100"
+    },
+    {
+      "id": 102,
+      "name": "Sản phẩm nổi bật 2",
+      "description": "Mô tả sản phẩm 2",
+      "slug": "san-pham-noi-bat-2",
+      "tags": [],
+      "collections": [],
+      "images": ["https://vinylsaigon.vn/wp-content/uploads/2025/07/vinylsaigon.vn_.starcity8.webp"],
+      "seo": {
+        "title": "Sản phẩm nổi bật 2",
+        "description": ""
+      },
+      "categories": {
+        "lv0": "Danh mục 2",
+        "lv1": ""
+      },
+      "variants": [
+        {
+          "name": "Default",
+          "shortDescription": null,
+          "price": "0",
+          "variantAttributes": {},
+          "images": ["https://vinylsaigon.vn/wp-content/uploads/2025/07/vinylsaigon.vn_.starcity8.webp"]
+        }
+      ],
+      "originalPrice": "300000",
+      "currentPrice": "250000",
+      "brands": ["3KShop"],
+      "flags": [],
+      "__position": 2,
+      "objectID": "102"
+    },
+    {
+      "id": 103,
+      "name": "Sản phẩm nổi bật 3",
+      "description": "Mô tả sản phẩm 3",
+      "slug": "san-pham-noi-bat-3",
+      "tags": [],
+      "collections": [],
+      "images": ["https://vinylsaigon.vn/wp-content/uploads/2025/07/vinylsaigon.vn_.starcity8.webp"],
+      "seo": {
+        "title": "Sản phẩm nổi bật 3",
+        "description": ""
+      },
+      "categories": {
+        "lv0": "Danh mục 3",
+        "lv1": ""
+      },
+      "variants": [
+        {
+          "name": "Default",
+          "shortDescription": null,
+          "price": "0",
+          "variantAttributes": {},
+          "images": ["https://vinylsaigon.vn/wp-content/uploads/2025/07/vinylsaigon.vn_.starcity8.webp"]
+        }
+      ],
+      "originalPrice": "400000",
+      "currentPrice": "350000",
+      "brands": ["3KShop"],
+      "flags": [],
+      "__position": 3,
+      "objectID": "103"
+    }
+  ]
+}
