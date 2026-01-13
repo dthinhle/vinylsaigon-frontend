@@ -77,11 +77,11 @@ const ProductVariants: React.FC<Props> = ({
                   className={cn(
                     'p-2 border cursor-pointer transition-all text-sm relative overflow-clip rounded',
                     selectedVariant.sku === variant.sku
-                      ? 'bg-atomic-tangerine-300 border-transparent text-white shadow-sm'
+                      ? 'bg-atomic-tangerine-700 border-transparent text-white shadow-sm'
                       : 'border-atomic-tangerine-700 text-atomic-tangerine-700',
                     variant.status !== 'active' ? 'bg-[linear-gradient(to_left_top,transparent_48.5%,var(--cross-out-color)_49.75%,var(--cross-out-color)_50.25%,transparent_51.5%)] bg-no-repeat' : '',
                   )}
-                  style={{ '--cross-out-color': 'var(--color-gray-400)' } as React.CSSProperties}
+                  style={{ '--cross-out-color': 'var(--color-atomic-tangerine-700)' } as React.CSSProperties}
                   onClick={() => {
                     setSelectedVariant(variant)
                   }}
