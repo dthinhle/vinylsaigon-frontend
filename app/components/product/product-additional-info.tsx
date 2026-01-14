@@ -25,16 +25,16 @@ const ProductAdditionalInfo: React.FC<Props> = ({ product }) => {
         </div>
       </div>
       {Array.isArray(productAttributes) && productAttributes.length > 0 && (
-        <div className='grid grid-cols-1 lg:grid-cols-[auto_1fr] lg:gap-18 mb-6'>
-          <p className={cn(stylized.className, 'text-xl lg:text-2xl font-medium mb-6')}>
+        <div className='gap-2 mb-6'>
+          <h3 className={cn(stylized.className, 'text-xl lg:text-2xl font-medium mb-6')}>
             Thông số chi tiết
-          </p>
-          <div className='flex flex-col gap-3 mt-3'>
+          </h3>
+          <div className='mb-8 leading-relaxed tracking-[0.0175em] lg:max-w-6xl mx-auto space-y-3'>
             {productAttributes.map((attribute, index) => {
               return (
                 <div key={index} className='flex items-start border-b border-gray-400 pb-3'>
-                  <p className='w-4/12 font-bold text-sm'>{attribute.label}</p>
-                  <p className='w-8/12 whitespace-pre-wrap text-left max-h-50 overflow-auto text-sm'>
+                  <p className='lg:w-3/12 w-1/3 font-bold text-sm'>{attribute.label}</p>
+                  <p className='lg:w-9/12 w-2/3 whitespace-pre-wrap text-left max-h-50 overflow-auto text-sm'>
                     {attribute.value}
                   </p>
                 </div>

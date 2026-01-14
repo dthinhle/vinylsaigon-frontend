@@ -80,7 +80,7 @@ interface IMenuBarProps {
 const subMenuVariants: Variants = {
   closed: {
     maxHeight: 0,
-    width: 'calc(min(var(--breakpoint-2xl), 100vw) - 2rem)',
+    width: 'calc(min(var(--breakpoint-2xl), 100vw))',
     borderRadius: 0,
     transition: {
       duration: 0.15,
