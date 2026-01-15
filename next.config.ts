@@ -220,7 +220,7 @@ const nextConfig: NextConfig = {
       },
       // Generic product slug rewrite, must be last
       {
-        source: '/:slug',
+        source: '/san-pham/:slug',
         destination: '/products/:slug',
       },
     ]

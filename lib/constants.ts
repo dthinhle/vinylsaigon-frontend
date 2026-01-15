@@ -6,7 +6,7 @@ export const ACCESS_TOKEN_KEY_NAME = 'jwtToken'
 export const FRONTEND_PATH = {
   root: '/',
   products: '/san-pham',
-  productDetail: (slug: string) => `/${slug}`,
+  productDetail: (slug: string) => `/san-pham/${slug}`,
   brands: '/thuong-hieu',
   brandDetail: (slug: string) => `/thuong-hieu/${slug}`,
   brandCategoryDetail: (slug: string, categorySlug: string) =>
